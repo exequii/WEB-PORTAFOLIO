@@ -1,34 +1,36 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 html{
     scroll-behavior: smooth; /*esto no funciona en explorer ni safari y no se puede variar la velocidad*/
 }
 
+
 #estadoScroll{
     position: fixed;
     top: 40%;
     left:2%;
     visibility: hidden;
-    
+    z-index: 5;
 }
 
 #estadoScroll ul{
     list-style: none;
 }
 
-#estadoScroll li a{
+#estadoScroll ul li a{
     text-decoration: none;
     color: white;
     font-size: 1.1em;
     transform: scale(1);
     transition: all 1s;
-    border: solid 1px white;
+    
 }
 
-#estadoScroll li a:hover{
+#estadoScroll ul li a:hover{
     transform: scale(1.3);
 }
 
@@ -104,7 +106,6 @@ video{
     font-size: 20px;
 }
 
-
 p{
     text-align: center;
 }
@@ -118,19 +119,58 @@ p{
     align-content: center;
     justify-content: center;
 }
-
-#aMover{
-    background-color: white;
-
-    width: 100%;
-    height: 300px;
-
+/************************** COLUMNA EXPERIENCIA ***********************************************************/
+#experiencia{
+    background-color: grey;
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#aMover2{
-    background-color: rgb(42, 140, 165);
-    width: 100%;
-    height: 300px;
+#columna1{
+    width: 48%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    --animate-duration: 5s;
+}
+
+.trabajos{
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    align-content: center;
+    transition: all .4s ease-in-out;
+}
+
+.trabajos:hover{
+    background-color: violet;
+}
+
+
+#lineaMedia{
+    width: 1%;
+    height: 90%;
+    background-color: black;
+    margin: 10px;
+}
+
+#columna2{
+    width: 48%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    visibility: hidden;
+    --animate-duration: 5s;
 }
 
 #mover{
@@ -145,6 +185,14 @@ p{
     font-family: 'Akaya Telivigala', cursive;
 }
 
+/********************************* COLUMNA PROYECTOS ***************************************************/
+
+#aMover2{
+    background-color: rgb(42, 140, 165);
+    width: 100%;
+    height: 300px;
+}
+
 #mover2{
     display: inline-block;
     margin-top: 30px;
@@ -152,7 +200,7 @@ p{
     border: white 2px solid;
     margin-left: 700px;
 }
-
+/*
 @keyframes movimiento{
     0%{
         transform: translateX(-720px);
@@ -164,7 +212,7 @@ p{
         transform: translateX(1200px);
     }
 }
-
+*/
 #mover{
     height: 100px;
 }
@@ -185,8 +233,36 @@ footer{
 footer a{
     text-decoration: none;
     color: white;
+    transform: scale(1);
+    transition: all 1s;
 }
 
 footer a:hover{
     color: black;
+    transform: scale(1.5);
+}
+
+/************************************** BARRA SCROLL VERTICAL **************************************/
+::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    /*display: none;  /* Ocultar scroll */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+::-webkit-scrollbar-thumb {
+    background: #25252580;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+::-webkit-scrollbar-thumb:active {
+    background-color: #252525;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+::-webkit-scrollbar-track {
+    background: #25252560;
 }

@@ -1,22 +1,14 @@
 window.addEventListener('scroll', function(){
-    let animacion = document.getElementById('mover');
-    let posicionObj1 = animacion.getBoundingClientRect().top;
-    console.log(posicionObj1);
+    let experiencia = document.getElementById('experiencia');
+    let posicionObj1 = experiencia.getBoundingClientRect().top;
+    /*console.log(posicionObj1);*/
     let tamañoDePantalla = window.innerHeight;
 
     if(posicionObj1 < tamañoDePantalla){
-        animacion.style.animation = 'movimiento 7s';
-    }
-})
 
-window.addEventListener('scroll', function(){
-    let animacion2 = document.getElementById('mover2');
-    let posicionObj2 = animacion2.getBoundingClientRect().top;
-    console.log(posicionObj2);
-    let tamañoDePantalla2 = window.innerHeight;
-
-    if(posicionObj2 < tamañoDePantalla2){
-        animacion2.style.animation = 'movimiento2 7s';
+        $('#columna1').addClass("animate__animated animate__slideInLeft");
+        $('#columna2').addClass("animate__animated animate__slideInRight animate__delay-1s");
+        $('#columna2').css("visibility", "visible");
     }
 })
 
@@ -36,27 +28,8 @@ $(document).ready(function(){
     var height = $(window).height();
 
     $('#cuadradoInicial').height(height);
-});
-
-$(document).ready(function(){
-
-    var height = $(window).height();
-
-    $('#aMover').height(height);
-});
-
-$(document).ready(function(){
-
-    var height = $(window).height();
-
+    $('#experiencia').height(height);
     $('#aMover2').height(height);
-});
-
-$(document).ready(function(){
-
-    var height = $(window).height();
-
     $('#cuadradoFinal').height(height);
 });
-
 
