@@ -23,7 +23,7 @@ html{
 
 #estadoScroll ul li a{
     text-decoration: none;
-    color: white;
+    color: rgba(121, 116, 116, 0.57);
     font-size: 1.1em;
     transform: scale(1);
     transition: all 1s;
@@ -147,6 +147,7 @@ p{
     text-align: center;
     align-content: center;
     transition: all .4s ease-in-out;
+    border-radius: 20px;
 }
 
 .trabajos:hover{
