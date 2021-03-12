@@ -7,12 +7,14 @@
     <title>Sanson Ezequiel - Portafolio</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">       
-
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=Ravi+Prakash&display=swap" rel="stylesheet">    
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="js/jquery.js"></script>
 </head>
 
@@ -44,30 +46,29 @@
 
     <section id="cuadradoInicial">
             <video src="img/fondo.mp4" autoplay loop muted ></video>
-            <div class="animate__animated animate__jello">
-            <h1>SANSÓN EZEQUIEL - PROGRAMADOR WEB FULLSTACK</h1>
-            <p>Universidad Nacional de la Matanza</p>
-            <p>Tecnicatura en Desarrollo Web</p>
+            <div>
+            <h1 class="animate__animated animate__backInDown">SANSÓN EZEQUIEL - PROGRAMADOR WEB FULLSTACK</h1>
+            <p class="animate__animated animate__backInDown animate__delay-1s">Universidad Nacional de la Matanza</p>
+            <p class="animate__animated animate__backInDown animate__delay-2s">Tecnicatura en Desarrollo Web</p>
             </div>
     </section>
 
-    <section id="experiencia">
+    <section id="experiencia" >
         <article id="columna1">
-            <div class="trabajos">
-                <div></div>
+            <div id="div1" class="trabajos" data-aos="zoom-in-right">
                 <h2>Ayudante Metalurgico</h2>
                 <span>Fabrica de Sillas SANSON</span>
                 <p>2016 - 2017</p>
             </div>
 
-            <div class="trabajos">
+            <div id="div3" class="trabajos" data-aos="zoom-in-right">
                 <h2>Jefe de Produccion Tecnica</h2>
                 <span>Equipamiento Medico SEAKIT</span>
                 <p>2017 - 2020</p>
             </div>
             
-            <div class="trabajos">
-                <h2>Tecnico Electronico</h2>
+            <div id="div5" class="trabajos" data-aos="zoom-in-right">
+                <h2>Servicio Tecnico</h2>
                 <span>Equipamiento Medico TECNOIMAGEN</span>
                 <p>2020 - Actualidad</p>
             </div>
@@ -78,14 +79,14 @@
 
         <article id="columna2">
 
-            <div class="trabajos">
+            <div id="div2" class="trabajos" data-aos="zoom-in-left">
                 <h2>Ingenieria en Informatica</h2>
                 <span>Universidad Nacional de la Matanza</span>
                 <p>2017 - 2019 </p>
                 <p>Universitario Incompleto</p>
             </div>
             
-            <div class="trabajos">
+            <div id="div4" class="trabajos" data-aos="zoom-in-left">
                 <h2>Tecnicatura en Desarrollo Web</h2>
                 <span>Universidad Nacional de la Matanza</span>
                 <p>2020 - Actualidad </p>
@@ -139,5 +140,9 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

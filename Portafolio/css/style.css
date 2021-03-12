@@ -83,8 +83,7 @@ header li a:hover:before{
     z-index: 100;
     background-color: rgba(128, 128, 128, 0.267); 
 }
-/*****************************************************************************************************************/
-
+/************************************************ HOME ******************************************************/
 #cuadradoInicial{
     width: 100%;
     display: flex;
@@ -110,6 +109,8 @@ p{
     text-align: center;
 }
 
+/********************************************** CONTACTAME *************************************************/
+
 #cuadradoFinal{
     background-color: grey;
     height: 625px;
@@ -117,8 +118,20 @@ p{
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around;
 }
+
+#cuadradoFinal form input{
+    border-radius: 10px;
+    border: 1px black solid;
+    width: 99%;
+}
+
+#cuadradoFinal form textarea{
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
 /************************** COLUMNA EXPERIENCIA ***********************************************************/
 #experiencia{
     background-color: grey;
@@ -126,6 +139,7 @@ p{
     width: auto;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Play', sans-serif;
 }
 
 #columna1{
@@ -170,7 +184,6 @@ p{
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    visibility: hidden;
     --animate-duration: 5s;
 }
 
@@ -201,24 +214,12 @@ p{
     border: white 2px solid;
     margin-left: 700px;
 }
-/*
-@keyframes movimiento{
-    0%{
-        transform: translateX(-720px);
-    }
-}
 
-@keyframes movimiento2{
-    0%{
-        transform: translateX(1200px);
-    }
-}
-*/
 #mover{
     height: 100px;
 }
 
-/*************************************************************************************************************/
+/************************************************* FOOTER *****************************************************/
 
 footer{
     height: 200px;
