@@ -132,6 +132,41 @@ p{
     border: 1px black solid;
 }
 
+#cuadradoFinal img{
+    width: 200px;
+}
+
+.row{
+    margin-bottom: 5%;
+}
+
+#lenguajes{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    align-content: center;
+}
+
+
+
+.iconos{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.iconos img{
+    width: 120px;
+    height: 130px;
+}
+
 /************************** COLUMNA EXPERIENCIA ***********************************************************/
 #experiencia{
     background-color: grey;
@@ -201,7 +236,7 @@ p{
 
 /********************************* COLUMNA PROYECTOS ***************************************************/
 
-#aMover2{
+#proyectos{
     background-color: rgb(42, 140, 165);
     width: 100%;
     height: 300px;
@@ -219,16 +254,19 @@ p{
     height: 100px;
 }
 
+
+  
+
 /************************************************* FOOTER *****************************************************/
 
 footer{
     height: 200px;
     background-color: rgba(128, 128, 128, 0.521);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around;
     font-family: 'Sora', sans-serif;
 }
 
@@ -242,6 +280,34 @@ footer a{
 footer a:hover{
     color: black;
     transform: scale(1.5);
+}
+
+#centrado{
+    width: 90%;
+    height: 100%;
+}
+
+#nav-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+
+#redes{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    
+}
+
+#redes img{
+    width: 30%;
+    margin-bottom: 10%;
+    margin-left: 15%;
 }
 
 /************************************** BARRA SCROLL VERTICAL **************************************/

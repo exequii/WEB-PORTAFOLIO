@@ -32,7 +32,7 @@ $(document).ready(function(){
 
     $('#cuadradoInicial').height(height);
     $('#experiencia').height(height);
-    $('#aMover2').height(height);
+    $('#proyectos').height(height);
     $('#cuadradoFinal').height(height);
 });
 
