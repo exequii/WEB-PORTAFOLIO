@@ -27,12 +27,44 @@ window.addEventListener('scroll', function(){
 })
 
 $(document).ready(function(){
+    $('.your-class').slick({
+ 
+    });
+});
+
+$(document).ready(function(){
 
     var height = $(window).height();
 
     $('#cuadradoInicial').height(height);
-    $('#experiencia').height(height);
+    $('#expContainer').height(height);
     $('#proyectos').height(height);
     $('#cuadradoFinal').height(height);
 });
 
+
+$('.center').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });

@@ -16,15 +16,22 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
     <script src="js/jquery.js"></script>
 </head>
 
 <body>
 
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+
     <div id="estadoScroll">
         <ul>
             <li><a href="#cuadradoInicial">-- HOME --</a></li>
-            <li><a href="#experiencia">-- EXPERIENCIA --</a></li>
+            <li><a href="#expContainer">-- EXPERIENCIA --</a></li>
             <li><a href="#proyectos">-- PROYECTOS --</a></li>
             <li><a href="#cuadradoFinal">-- CONTACTO --</a></li>
         </ul>
@@ -38,7 +45,7 @@
         <nav id="menu">
             <ul>
                 <li><a href="#cuadradoInicial">HOME</a></li>
-                <li><a href="#experiencia">EXPERIENCIA</a></li>
+                <li><a href="#expContainer">EXPERIENCIA</a></li>
                 <li><a href="#proyectos">PROYECTOS</a></li>
                 <li><a href="#cuadradoFinal">CONTACTO</a></li>
             </ul>
@@ -48,9 +55,9 @@
     <section id="cuadradoInicial">
             <video src="img/fondo.mp4" autoplay loop muted ></video>
             <div>
-            <h1 class="animate__animated animate__backInDown">SANSÓN EZEQUIEL - PROGRAMADOR WEB FULLSTACK</h1>
-            <p class="animate__animated animate__backInDown animate__delay-1s">Universidad Nacional de la Matanza</p>
-            <p class="animate__animated animate__backInDown animate__delay-2s">Tecnicatura en Desarrollo Web</p>
+            <h1 class="animate__animated animate__backInDown animate__delay-3s">SANSÓN EZEQUIEL - PROGRAMADOR WEB FULLSTACK</h1>
+            <p class="animate__animated animate__backInDown animate__delay-4s">Universidad Nacional de la Matanza</p>
+            <p class="animate__animated animate__backInDown animate__delay-5s">Tecnicatura en Desarrollo Web</p>
             </div>
     </section>
 
@@ -100,7 +107,14 @@
     </section>
 
     <section id="proyectos">
-
+        <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+            <div><h3>1</h3></div>
+            <div><h3>2</h3></div>
+            <div><h3>3</h3></div>
+            <div><h3>4</h3></div>
+            <div><h3>5</h3></div>
+            <div><h3>6</h3></div>
+          </div>
 
     </section>
 
@@ -163,7 +177,7 @@
             <div id="nav-footer">
                 <h3>Sansón, Ezequiel Damian</h3>
                 <a href="#cuadradoInicial">HOME</a>
-                <a href="#experiencia">EXPERIENCIA</a>
+                <a href="#expContainer">EXPERIENCIA</a>
                 <a href="#proyectos">PROYECTOS</a>
                 <a href="#cuadradoFinal">CONTACTO</a>
             </div>
@@ -173,8 +187,15 @@
 
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        },2300);
+
+        AOS.init();
+    </script>
+
 </body>
 </html>
