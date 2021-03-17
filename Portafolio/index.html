@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Play&family=Ravi+Prakash&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=Ravi+Prakash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet"> 
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -22,10 +23,13 @@
     <script src="js/jquery.js"></script>
 </head>
 
+<!------------------------------------------- BODY ---------------------------------------------------------------------------->
+<!--------------------------------------------PRE LOADER Y NAV LATERAL -------------------------------------------------------->
 <body>
 
     <div class="loader_bg">
         <div class="loader"></div>
+        <p id="preloader">EZEQUIEL SANSON - WEB DESIGN</p>
     </div>
 
     <div id="estadoScroll">
@@ -36,6 +40,8 @@
             <li><a href="#cuadradoFinal">-- CONTACTO --</a></li>
         </ul>
     </div>
+
+<!-- HEADER -------------------------------------------------------------------------------------------------------------------->
 
     <header>
         <div id="logo">
@@ -52,6 +58,8 @@
         </nav>
     </header>
 
+<!-- HOME ----------------------------------------------------------------------------------------------------------------------->
+
     <section id="cuadradoInicial">
             <video src="img/fondo.mp4" autoplay loop muted ></video>
             <div>
@@ -60,6 +68,8 @@
             <p class="animate__animated animate__backInDown animate__delay-5s">Tecnicatura en Desarrollo Web</p>
             </div>
     </section>
+
+<!-- EXPERIENCIA LABORAL ------------------------------------------------------------------------------------------------------->
 
     <section id="expContainer">
     <div id="experiencia">
@@ -84,8 +94,6 @@
 
         </article>
 
-        <article id="lineaMedia"></article>
-
         <article id="columna2">
 
             <div id="div2" class="trabajos" data-aos="zoom-in-left">
@@ -106,44 +114,23 @@
     </div>
     </section>
 
+<!-- PROYECTOS ---------------------------------------------------------------------------------------------------------------------------->
+
     <section id="proyectos">
-        <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-            <div><h3>1</h3></div>
-            <div><h3>2</h3></div>
-            <div><h3>3</h3></div>
-            <div><h3>4</h3></div>
-            <div><h3>5</h3></div>
-            <div><h3>6</h3></div>
+        <div class="for_slick_slider multiple-items" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
+            <div class="items">WEB COVID</div>
+            <div class="items">WEB MAGNETO</div>
+            <div class="items">WEB DENU</div>
+            <div class="items">WEB ANIMACIONES</div>
+            <div class="items">WEB DS DESIGN</div>
           </div>
 
     </section>
 
-    <section id="cuadradoFinal">
-        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-            <h3> Formulario de Contacto:</h3>
-            <div class="row" data-aos="zoom-in-right" data-aos-easing="linear"
-            data-aos-duration="600">
-              <label class="required" for="name">Nombre:</label><br />
-              <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-              <span id="name_validation" class="error_message"></span>
-            </div>
-            <div class="row" data-aos="zoom-in-right" data-aos-easing="linear"
-            data-aos-duration="600">
-              <label class="required" for="email">Email:</label><br />
-              <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-              <span id="email_validation" class="error_message"></span>
-            </div>
-            <div class="row" data-aos="zoom-in-right" data-aos-easing="linear"
-            data-aos-duration="600">
-              <label class="required" for="message">Mensaje:</label><br />
-              <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-              <span id="message_validation" class="error_message"></span>
-            </div>
-              
-              <input id="submit_button" type="submit" value="Enviar" data-aos="zoom-in-right" data-aos-easing="linear"
-              data-aos-duration="600"/>
-          </form>
+<!-- CONTACTAME -------------------------------------------------------------------------------------------------------------------------->
 
+    <section id="cuadradoFinal">
+        
           <article id="lenguajes">
             <h3>Conocimientos:</h3>
                 <div class="iconos">
@@ -162,13 +149,16 @@
 
     </section>
 
+<!-- FOOTER ------------------------------------------------------------------------------------------------------------------------------->
+
     <footer>
         <div id="redes" data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1300">
-            <img src="img/github.png" alt="">
-            <img src="img/twitter.png" alt="">
-            <img src="img/ig.png" alt="">
+            <a href="https://github.com/exequii" target="_blank"><img src="img/github.png" alt=""></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" alt=""></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="img/ig.png" alt=""></a>
+            <a href="https://ar.linkedin.com/in/ezequiel-sans%C3%B3n-8128b11b0" target="_blank"><img src="img/linkedin.png" alt=""></a>
         </div>
 
         <div id="centrado" data-aos="fade-down"
@@ -185,6 +175,8 @@
 
     </footer>
 
+ <!-- LINEAS DE SCRIPT ------------------------------------------------------------------------------------------------------------------->
+    
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
