@@ -57,3 +57,16 @@ $(function (){
       
   });
 });
+/*
+if ( index == 5 ){
+    $('.go-down').attr('href', '#slide1' );
+} else if ( index != 5 ){
+    $('.go-down').attr('href', '#slide' + (nextIndex + 1) );
+}
+*/
+var projectNames = [ 'Home', 'Experiencia', 'Proyectos', 'Contactame']
+
+$('#estadoScroll li').each(function(index){
+    $(this).find('a').append('<h6>' + projectNames[index] + '</h6>');
+});
+

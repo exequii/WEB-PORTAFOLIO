@@ -7,6 +7,8 @@
     <title>Sanson Ezequiel - Portafolio</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
@@ -16,9 +18,6 @@
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
 
     <script src="js/jquery.js"></script>
 </head>
@@ -34,17 +33,29 @@
 
     <div id="estadoScroll">
         <ul>
-            <li><a href="#cuadradoInicial">-- HOME --</a></li>
-            <li><a href="#expContainer">-- EXPERIENCIA --</a></li>
-            <li><a href="#proyectos">-- PROYECTOS --</a></li>
-            <li><a href="#cuadradoFinal">-- CONTACTO --</a></li>
-        </ul>
+            <li><a href="#cuadradoInicial" class="active">
+                <span></span>
+                <h6></h6>
+            </a></li>
+            <li><a href="#expContainer" class="">
+                <span></span>
+                <h6></h6>
+            </a></li>
+            <li><a href="#proyectos" class="">
+                <span></span>
+                <h6></h6>
+            </a></li>
+            <li><a href="#cuadradoFinal" class="">
+                <span></span>
+                <h6></h6>
+            </a></li>
+        </iul>
     </div>
 
 <!-- HEADER -------------------------------------------------------------------------------------------------------------------->
 
     <header>
-        <div id="logo">
+        <div id="transparencia">
 
             <a href="index.html"><img src=""></a>
 
@@ -56,6 +67,7 @@
                 <li><a href="#cuadradoFinal">CONTACTO</a></li>
             </ul>
         </nav>
+        </div>
     </header>
 
 <!-- HOME ----------------------------------------------------------------------------------------------------------------------->
@@ -118,11 +130,12 @@
 
     <section id="proyectos">
         <div class="for_slick_slider multiple-items" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
-            <div class="items">WEB COVID</div>
-            <div class="items">WEB MAGNETO</div>
+            <div class="items"><img src="img/covid.jpg" alt="">
+            </div>
+            <div class="items"><img src="img/kineofix.jpg" alt=""></div>
             <div class="items">WEB DENU</div>
             <div class="items">WEB ANIMACIONES</div>
-            <div class="items">WEB DS DESIGN</div>
+            <div class="items"><img src="img/dsdesign.jpg" alt=""></div>
           </div>
 
     </section>
