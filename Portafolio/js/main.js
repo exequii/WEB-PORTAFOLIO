@@ -1,20 +1,32 @@
-/*window.addEventListener('scroll', function(){
-    let experiencia = document.getElementById('experiencia');
-    let posicionObj1 = experiencia.getBoundingClientRect().top;
-    /*console.log(posicionObj1);
+/*
+
+window.addEventListener('scroll', function(){
+    let home = document.getElementById('section1');
+    let experiencia = document.getElementById('section2');
+    let proyectos = document.getElementById('section3');
+    let contacto = document.getElementById('section4');
+
+    let posicionObj1 = home.getBoundingClientRect().top;
+    let posicionObj2 = experiencia.getBoundingClientRect().top;
+    let posicionObj3 = proyectos.getBoundingClientRect().top;
+    let posicionObj4 = contacto.getBoundingClientRect().top;
+
     let tamañoDePantalla = window.innerHeight;
 
     if(posicionObj1 < tamañoDePantalla){
-
-        $('#div1').addClass("animate__animated animate__fadeIn");
-        $('#div2').addClass("animate__animated animate__fadeIn animate__delay-1s");
-        $('#div3').addClass("animate__animated animate__fadeIn animate__delay-2s");
-        $('#div4').addClass("animate__animated animate__fadeIn animate__delay-3s");
-        $('#div5').addClass("animate__animated animate__fadeIn  animate__delay-4s");
-        $('#columna2').css("visibility", "visible");
+        $('#div1').css("color", "red");
+    }
+    if(posicionObj2 < tamañoDePantalla){
+        $('#div2').css("color", "red");
+    }
+    if(posicionObj3 < tamañoDePantalla){
+        $('#div3').css("color", "red");
+    }
+    if(posicionObj4 < tamañoDePantalla){
+        $('#div4').css("color", "red");
     }
 })
-*/
+/*
 window.addEventListener('scroll', function(){
     let navLateral = document.getElementById('estadoScroll');
     let posicionObj3 = navLateral.getBoundingClientRect().bottom;
@@ -25,7 +37,7 @@ window.addEventListener('scroll', function(){
         navLateral.style.visibility = 'visible';
     }
 })
-
+*/
 $(document).ready(function(){
     $('.your-class').slick({
  
@@ -36,10 +48,10 @@ $(document).ready(function(){
 
     var height = $(window).height();
 
-    $('#cuadradoInicial').height(height);
-    $('#expContainer').height(height);
-    $('#proyectos').height(height);
-    $('#cuadradoFinal').height(height);
+    $('#section1').height(height);
+    $('#section2').height(height);
+    $('#section3').height(height);
+    $('#section4').height(height);
 });
 
 
@@ -65,8 +77,37 @@ if ( index == 5 ){
 }
 */
 var projectNames = [ 'Home', 'Experiencia', 'Proyectos', 'Contactame']
-
+var numero = 1;
 $('#estadoScroll li').each(function(index){
-    $(this).find('a').append('<h6>' + projectNames[index] + '</h6>');
+    $(this).find('a').append(projectNames[index]);
 });
 
+
+/*
+$(window).bind('mousewheel', function(event) {
+    if (event.originalEvent.wheelDelta >= 0) {
+        console.log(numero);
+        if(numero >= 4){
+            numero = 4;
+        }
+        else{
+            numero++;
+        }
+        $('html, body').animate({  
+            scrollTop: $('#section'+ numero).offset().top
+            }, 100);
+    }
+    else {
+        console.log(numero);
+        if(numero <= 1){
+            numero = 1;
+        }
+        else{
+            numero--;
+        }
+        $('html, body').animate({
+            scrollTop: $('#section4'+ numero).offset().top
+            }, 100);
+    }
+    });
+*/
