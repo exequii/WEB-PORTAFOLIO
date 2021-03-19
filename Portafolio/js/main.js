@@ -92,15 +92,39 @@ $(window).bind('mousewheel', function(event) {
             scrollTop: $('#section'+ numero).offset().top
             }, 100);
     }
-    switch(numero){
-        case 1:
-            break;
-        case 2:
-            break;
-        case 3:
-            break;
-        case 4:
-            break;
-        }
+    numeroScroll(numero);
     });
+
+
+    function numeroScroll(numero){
+        switch(numero){
+            case 1:
+                $('#div1').addClass('active');
+                $('#div2').removeClass('active');
+                $('#div3').removeClass('active');
+                $('#div4').removeClass('active');
+                break;
+    
+            case 2:
+                $('#div1').removeClass('active');
+                $('#div2').addClass('active');
+                $('#div3').removeClass('active');
+                $('#div4').removeClass('active');
+                break;
+    
+            case 3:
+                $('#div1').removeClass('active');
+                $('#div2').removeClass('active');
+                $('#div3').addClass('active');
+                $('#div4').removeClass('active');
+                break;
+    
+            case 4:
+                $('#div1').removeClass('active');
+                $('#div2').removeClass('active');
+                $('#div3').removeClass('active');
+                $('#div4').addClass('active');
+                break;
+            }
+    }
 

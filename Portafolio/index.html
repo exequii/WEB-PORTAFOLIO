@@ -33,18 +33,17 @@
 
     <div id="estadoScroll">
         <ul>
-            <li><a href="#section1" id="div1" class="">
-                <img src="img/viñeta scroll.png" alt="">  Home
-                <p>Hola</p>
+            <li><a href="#section1" id="div1" class="active" onclick="numero = 1; numeroScroll(numero);">
+                Home
             </a></li>
-            <li><a href="#section2" id="div2" class="">
-                <img src="img/viñeta scroll.png" alt="">
+            <li><a href="#section2" id="div2" class="" onclick="numero = 2;  numeroScroll(numero);">
+                  Experiencia
             </a></li>
-            <li><a href="#section3" id="div3" class="">
-                <img src="img/viñeta scroll.png" alt="">
+            <li><a href="#section3" id="div3" class="" onclick="numero = 3;  numeroScroll(numero);">
+                 Proyectos
             </a></li>
-            <li><a href="#section4" id="div4" class="">
-                <img src="img/viñeta scroll.png" alt="">
+            <li><a href="#section4" id="div4" class="" onclick="numero = 4;  numeroScroll(numero);">
+                Contacto
             </a></li>
         </ul>
     </div>
@@ -54,14 +53,14 @@
     <header>
         <div id="transparencia">
 
-            <a href="index.html"><img src=""></a>
+            <!--<a href="index.html"><img src=""></a>-->
 
         <nav id="menu">
             <ul>
-                <li><a href="#section1">HOME</a></li>
-                <li><a href="#section2">EXPERIENCIA</a></li>
-                <li><a href="#section3">PROYECTOS</a></li>
-                <li><a href="#section4">CONTACTO</a></li>
+                <li><a href="#section1" onclick="numero = 1; numeroScroll(numero);">HOME</a></li>
+                <li><a href="#section2" onclick="numero = 2; numeroScroll(numero);">EXPERIENCIA</a></li>
+                <li><a href="#section3" onclick="numero = 3; numeroScroll(numero);">PROYECTOS</a></li>
+                <li><a href="#section4" onclick="numero = 4; numeroScroll(numero);">CONTACTO</a></li>
             </ul>
         </nav>
         </div>
@@ -139,7 +138,7 @@
 <!-- CONTACTAME -------------------------------------------------------------------------------------------------------------------------->
 
     <section id="section4">
-        
+
           <article id="lenguajes">
             <h3>Conocimientos:</h3>
                 <div class="iconos">
@@ -158,6 +157,8 @@
 
     </section>
 
+    
+
 <!-- FOOTER ------------------------------------------------------------------------------------------------------------------------------->
 
     <footer id="section5">
@@ -175,10 +176,10 @@
         data-aos-duration="1300">
             <div id="nav-footer">
                 <h3>Sansón, Ezequiel Damian</h3>
-                <a href="#section1">HOME</a>
-                <a href="#section2">EXPERIENCIA</a>
-                <a href="#section3">PROYECTOS</a>
-                <a href="#section4">CONTACTO</a>
+                <a href="#section1" onclick="numero = 1; numeroScroll(numero);">HOME</a>
+                <a href="#section2" onclick="numero = 2; numeroScroll(numero);">EXPERIENCIA</a>
+                <a href="#section3" onclick="numero = 3; numeroScroll(numero);">PROYECTOS</a>
+                <a href="#section4" onclick="numero = 4; numeroScroll(numero);">CONTACTO</a>
             </div>
         </div>
 

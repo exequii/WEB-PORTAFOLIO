@@ -17,34 +17,21 @@ html{
     width: 10%;
 }
 
+#estadoScroll{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
 #estadoScroll img{
     width: 5px;
 }
 
-.visible{
-    opacity: 1;
-}
-
 .active{
-    opacity: 1;
-    color: red;
+    opacity: 1 !important;
+    color: red !important;
+    transform: translate(15px,0px);
+    transition: all 0.3s ease-in-out;
 }
-/*
-#estadoScroll li{
-    display: flex;
-}
-
-
-#estadoScroll ul li a h6{
-    height: 20%;
-    width:100%;
-}
-/*
-#estadoScroll ul li::marker{
-    color: rgba(185, 185, 185, 0.733);
-    font-size: 1.4em;
-}
-*/
 
 #estadoScroll ul li a{
     text-decoration: none;
@@ -53,23 +40,7 @@ html{
     transform: scale(1);
     width: 100%;
     font-family: 'Sora', sans-serif;
-}
-
-#estadoScroll a .active{
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-    /*
-    pointer-events:auto;
-    -webkit-transform:translate(0px, 0px);
-    -ms-transform:translate(0px, 0px);
-    transform:translate(0px, 0px);
-    */
-  }
-
-#estadoScroll ul li a img:hover{
-    opacity: .6;
-    transform:translate(10px, 0px); 
-    transition: all 0.3s ease-in-out;
+    transform: translate (0px,0px);
 }
 
 
@@ -197,7 +168,7 @@ html{
 /*********************************************** NAV *****************************************************/
 
 header nav{
-    width: 90%;
+    width: 100%;
 }
 
 header ul{
@@ -378,7 +349,7 @@ video{
 
 #lenguajes{
     height: 100%;
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -403,9 +374,9 @@ video{
 }
 
 .iconos img{
-    width: 20%;
+    width: 10%;
 }
-  
+
 
 /************************************************* FOOTER *****************************************************/
 
