@@ -26,17 +26,6 @@ window.addEventListener('scroll', function(){
         $('#div4').css("color", "red");
     }
 })
-/*
-window.addEventListener('scroll', function(){
-    let navLateral = document.getElementById('estadoScroll');
-    let posicionObj3 = navLateral.getBoundingClientRect().bottom;
-    console.log(posicionObj3);
-    let tamañoDePantalla3 = window.innerHeight * 2;
-
-    if(posicionObj3 < tamañoDePantalla3){
-        navLateral.style.visibility = 'visible';
-    }
-})
 */
 $(document).ready(function(){
     $('.your-class').slick({
@@ -70,25 +59,19 @@ $(function (){
   });
 });
 /*
-if ( index == 5 ){
-    $('.go-down').attr('href', '#slide1' );
-} else if ( index != 5 ){
-    $('.go-down').attr('href', '#slide' + (nextIndex + 1) );
-}
-*/
 var projectNames = [ 'Home', 'Experiencia', 'Proyectos', 'Contactame']
-var numero = 1;
 $('#estadoScroll li').each(function(index){
     $(this).find('a').append(projectNames[index]);
 });
+*/
 
-
-/*
+var numero = 1;
 $(window).bind('mousewheel', function(event) {
-    if (event.originalEvent.wheelDelta >= 0) {
+
+    if (event.originalEvent.wheelDelta <= 0) {
         console.log(numero);
-        if(numero >= 4){
-            numero = 4;
+        if(numero >= 5){
+            numero = 5;
         }
         else{
             numero++;
@@ -106,8 +89,18 @@ $(window).bind('mousewheel', function(event) {
             numero--;
         }
         $('html, body').animate({
-            scrollTop: $('#section4'+ numero).offset().top
+            scrollTop: $('#section'+ numero).offset().top
             }, 100);
     }
+    switch(numero){
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        }
     });
-*/
+
