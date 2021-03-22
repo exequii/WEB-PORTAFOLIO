@@ -12,14 +12,17 @@ html{
 #estadoScroll{
     position: fixed;
     top: 40%;
-    left:2%;
+    left:1%;
     z-index: 5;
-    width: 10%;
-}
-
-#estadoScroll{
+    width: 15%;
+    height: 20%;
     list-style-type: disc;
     list-style-position: inside;
+}
+
+
+#estadoScroll ul li::marker{
+    color: rgba(185, 185, 185, 0.733);
 }
 
 #estadoScroll img{
@@ -28,19 +31,26 @@ html{
 
 .active{
     opacity: 1 !important;
-    color: red !important;
-    transform: translate(15px,0px);
-    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+    /*font-size: 1em !important;*/
 }
 
 #estadoScroll ul li a{
     text-decoration: none;
     color: rgba(185, 185, 185, 0.733);
-    font-size: 1em;
-    transform: scale(1);
+    font-size: 0.9em;
     width: 100%;
     font-family: 'Sora', sans-serif;
-    transform: translate (0px,0px);
+    opacity: 0;
+    transform: translate(0px,0px);
+    position: absolute;
+    left: 5%;
+}
+
+#estadoScroll ul li a:hover{
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -251,7 +261,7 @@ video{
 }
 
 #experiencia{
-    box-shadow: 0px 0px 10px 4px rgb(202, 182, 182);
+
     display: flex;
     width: 85%;
     height: 95%;
@@ -274,15 +284,10 @@ video{
 .trabajos{
     width: 90%;
     height: auto;
-    background-color: white;
-    border: 1px solid black;
+    color: white;
     text-align: center;
     align-content: center;
     transition: all .4s ease-in-out;
-}
-
-.trabajos:hover{
-    background-color: violet;
 }
 
 
@@ -297,18 +302,62 @@ video{
     --animate-duration: 5s;
 }
 
+.años{
+    font-size: 4em;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    left: 1%;
+    top: 1%;
+}
+
 
 /********************************* COLUMNA PROYECTOS ***************************************************/
 #section3{
     display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: center;
 }
+
+#pro{
+    width: 100%;
+    height: 100%;
+}
+
+#section3 h1{
+    display: block;
+    font-size: 7em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    left: 12%;
+    top: 5%;
+}
+#section3 h2{
+    display: block;
+    font-size: 4.5em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    left: 17%;
+    top: 1%;
+}
+
+#section3 p{
+    display: block;
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    position: relative;
+}
+
 
 .for_slick_slider{
     display: flex;
     width: 90%;
+    height: 100%;
+    position: absolute;
+    top: -15%;
 }
 
 .for_slick_slider .items{
