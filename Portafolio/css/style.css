@@ -283,13 +283,13 @@ video{
 
 .trabajos{
     width: 90%;
-    height: auto;
+    height: 25%;
     color: white;
     text-align: center;
     align-content: center;
     transition: all .4s ease-in-out;
+    border-radius: 5px;
 }
-
 
 #columna2{
     width: 48%;
@@ -301,6 +301,67 @@ video{
     justify-content: space-around;
     --animate-duration: 5s;
 }
+
+#sanson{
+    background: url(../img/metalurgica.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.7);
+}
+
+#sanson:hover{
+    filter:grayscale(0);
+    transition: all 1s ease-in;
+}
+
+#informatica{
+    background: url(../img/informatica.jpg);
+    background-size: cover;
+    background-position: top;
+    filter: grayscale(0.7);
+}
+
+#informatica:hover{
+    filter:grayscale(0);
+    transition: all 1s ease-in;
+}
+
+#fisio{
+    background: url(../img/fisio.jpeg);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.7);
+}
+
+#fisio:hover{
+    filter:grayscale(0);
+    transition: all 1s ease-in;
+}
+
+#programador{
+    background: url(../img/programador.jpg);
+    background-size: cover;
+    background-position: top;
+    filter: grayscale(0.7);
+}
+
+#programador:hover{
+    filter:grayscale(0);
+    transition: all 1s ease-in;
+}
+
+#tecnoimagen{
+    background: url(../img/tecnoimagen.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.7);
+}
+
+#tecnoimagen:hover{
+    filter:grayscale(0);
+    transition: all 1s ease-in;
+}
+
 
 .años{
     font-size: 4em;
@@ -407,9 +468,35 @@ video{
     font-size: 1.5em;
 }
 
+#contact{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    left: -21%;
+    top: 5%;
+    text-decoration: none;
+}
+
+#contact:hover{
+    opacity: 0.5;
+}
+
+#lenguajes h2{
+    display: block;
+    font-size: 7em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    position: relative;
+}
+
 #lenguajes h3{
-    font-size: 1.5em;
-    height: 15%;
+    display: block;
+    font-size: 5em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    left: 48%;
+    top: -20%;
 }
 
 .iconos{
