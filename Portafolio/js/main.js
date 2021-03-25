@@ -41,6 +41,7 @@ $(document).ready(function(){
     $('#section2').height(height);
     $('#section3').height(height);
     $('#section4').height(height);
+    $('#section5').height(height);
 });
 
 
@@ -70,8 +71,8 @@ $(window).bind('mousewheel', function(event) {
 
     if (event.originalEvent.wheelDelta <= 0) {
         console.log(numero);
-        if(numero >= 5){
-            numero = 5;
+        if(numero >= 6){
+            numero = 6;
         }
         else{
             numero++;
@@ -111,15 +112,22 @@ $(window).bind('mousewheel', function(event) {
                 $('#div3').removeClass('active');
                 $('#div4').removeClass('active');
                 break;
-    
+
             case 3:
+                $('#div1').removeClass('active');
+                $('#div2').addClass('active');
+                $('#div3').removeClass('active');
+                $('#div4').removeClass('active');
+            break;
+    
+            case 4:
                 $('#div1').removeClass('active');
                 $('#div2').removeClass('active');
                 $('#div3').addClass('active');
                 $('#div4').removeClass('active');
                 break;
     
-            case 4:
+            case 5:
                 $('#div1').removeClass('active');
                 $('#div2').removeClass('active');
                 $('#div3').removeClass('active');
