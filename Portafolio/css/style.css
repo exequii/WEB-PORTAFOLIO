@@ -260,18 +260,26 @@ video{
     align-items: center;
 }
 
-#experiencia{
-
+.experiencia{
     display: flex;
     width: 85%;
-    height: 95%;
+    height: 90%;
     /*justify-content: space-around;*/
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-items: center;
     font-family: 'Play', sans-serif;
     color: white;
+}
+
+.experiencia img{
+    filter: grayscale(0.8);
+}
+
+.experiencia img:hover{
+    filter: grayscale(0);
+    transition: all .8s ease-in-out;
 }
 
 #historia{
@@ -280,7 +288,7 @@ video{
     color: white;
     width: 100%;
     position: relative;
-    top: -7%;
+    top: -2%;
     left: 1%;
 }
 
@@ -373,7 +381,7 @@ video{
 */
 
 .años{
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Righteous', cursive;
     display: flex;
     flex-direction: column;
