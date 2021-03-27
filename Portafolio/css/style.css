@@ -289,7 +289,7 @@ video{
     width: 100%;
     position: relative;
     top: -2%;
-    left: 1%;
+    left: 63%;
 }
 
 #section3{
@@ -380,14 +380,27 @@ video{
 }
 */
 
+
 .años{
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Righteous', cursive;
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 1%;
-    top: 1%;
+    left: 46%;
+    top: 41%;
+    transform: rotate(-90deg);
+}
+
+.años2{
+    font-size: 2em;
+    font-family: 'Righteous', cursive;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -46%;
+    top: 41%;
+    transform: rotate(90deg);
 }
 
 
@@ -401,7 +414,7 @@ video{
 
 #pro{
     width: 100%;
-    height: 100%;
+    height: 30%;
 }
 
 #section4 h1{
@@ -434,10 +447,9 @@ video{
 
 .for_slick_slider{
     display: flex;
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: 45%;
     position: absolute;
-    top: -15%;
 }
 
 .for_slick_slider .items{
@@ -448,9 +460,11 @@ video{
     transition: all linear .4s;
 }
 
+
 .for_slick_slider .slick-center {
     transform: scale(1.2);
 }
+
 
 .items{
     box-shadow: 2px 2px 15px 1px black;
@@ -461,14 +475,25 @@ video{
     height: 100%;
 }
 
+.iconos{
+    width: 60%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
 
+.iconos img{
+    width: 10%;
+}
 
 
 /********************************************** CONTACTAME *************************************************/
 
 #section5{
     background-color: rgb(85, 85, 85);
-    height: 625px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -488,11 +513,13 @@ video{
 }
 
 #contact{
-    height: 100%;
-    width: 50%;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    left: -21%;
-    top: 5%;
+    top: 2%;
+    left: 7%;
     text-decoration: none;
 }
 
@@ -514,23 +541,11 @@ video{
     color: white;
     font-family: 'Righteous', cursive;
     position: relative;
-    left: 48%;
-    top: -20%;
+    left: 24%;
+    top: -10%;
 }
 
-.iconos{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    overflow: hidden;
-}
 
-.iconos img{
-    width: 10%;
-}
 
 
 /************************************************* FOOTER *****************************************************/
