@@ -59,7 +59,7 @@ html{
 .loader_bg{
     position: fixed;
     z-index: 999999;
-    background: url(../img/preloader.jpg) repeat 10%;
+    background: url(../img/preloader.jpg) center;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -88,7 +88,7 @@ html{
 
 .loader::before, .loader::after{
     content: '';
-    border: 1em solid;
+    border: 1em solid white;
     border-radius: 50%;
     width: inherit;
     height: inherit;
@@ -105,40 +105,15 @@ html{
 
 @keyframes loader{
         0%{
-          border-color: #181818;
           transform: scale(0);
-        opacity: 0;
-        }
-        7%{
-            border-color: #fe8507;
-          opacity: 1;
-        }
-        15%{
-            border-color: #b62323;
-        }
-        30%{
-            border-color: #11619C;
-        }
-        45%{
-            border-color: #994aca;
+          opacity: 0;
         }
         50%{
             opacity:1;
         }
-        60%{
-            border-color: #a43644;
-        }
-        75%{
-            border-color: orange;
-        }
-        90%{
-            border-color: #3a9fd9;
-          opacity: 1;
-        }
         100%{
-            border-color: #fe8507;
-          transform: scale(1);
-        opacity: 0;
+            transform: scale(1);
+            opacity: 0;
         }
       }
 
@@ -625,4 +600,33 @@ footer #centrado a:hover{
 /* Ponemos un color de fondo y redondeamos las esquinas del track */
 ::-webkit-scrollbar-track {
     background: #25252560;
+}
+
+
+/***************************** MEDIA QUERIES *******************************************************/
+
+@media screen and (min-width: 1200px){
+    #contact{
+        font-size: 60%;
+    }
+
+    .años{
+        font-size: 1.6em;
+    }
+    .años2{
+        font-size: 1.6em;
+    }
+
+    #historia{
+        font-size: 4em;
+    }
+
+    #pro h1{
+        font-size: 5.5em;
+    }
+
+    #pro h2{
+        font-size: 2.5em;
+    }
+
 }
