@@ -14,8 +14,8 @@ html{
     top: 40%;
     left:1%;
     z-index: 5;
-    width: 15%;
-    height: 20%;
+    width: 6%;
+    height: 15%;
     list-style-type: disc;
     list-style-position: inside;
 }
@@ -23,10 +23,6 @@ html{
 
 #estadoScroll ul li::marker{
     color: rgba(185, 185, 185, 0.733);
-}
-
-#estadoScroll img{
-    width: 5px;
 }
 
 .active{
@@ -45,7 +41,7 @@ html{
     opacity: 0;
     transform: translate(0px,0px);
     position: absolute;
-    left: 5%;
+    left: 8%;
 }
 
 #estadoScroll ul li a:hover{
@@ -213,7 +209,7 @@ header li a:hover:before{
 video{
     position: fixed;
     width: 100%;
-    z-index: -1;
+    z-index: -2;
 }
 
 #section1 p{
@@ -222,7 +218,17 @@ video{
 }
 
 
+#animacionCuadrado{
+    width: 500px;
+    height: 500px;
+    border: 2px solid grey;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(45deg);
+    top: 18%;
+    left: 34.5%;
 
+}
 
 
 /************************** COLUMNA EXPERIENCIA ***********************************************************/
@@ -248,11 +254,11 @@ video{
     color: white;
 }
 
-.experiencia img{
+.trabajo img{
     filter: grayscale(0.8);
 }
 
-.experiencia img:hover{
+.trabajo:hover img{
     filter: grayscale(0);
     transition: all .8s ease-in-out;
 }
@@ -438,6 +444,17 @@ video{
 
 .for_slick_slider .slick-center {
     transform: scale(1.2);
+}
+
+.for_slick_slider img{
+    transition: all 1s ease-in-out;
+}
+
+.for_slick_slider img:hover{
+    transform: scale(1.1);
+    -webkit-transform:scale(1.1);
+    transition: all 1s ease-in-out;
+    overflow: hidden;
 }
 
 
