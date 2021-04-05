@@ -116,33 +116,42 @@ html{
       @keyframes color{
         0%{
           color: #181818;
+          border-color: #181818;;
         opacity: 0;
         }
         7%{
           color: #fe8507;
+          border-color: #fe8507;
           opacity: 1;
         }
         15%{
           color: #b62323;
+          border-color: #b62323;
         }
         30%{
           color: #11619C;
+          border-color: #11619C;
         }
         45%{
           color: #994aca;
+          border-color: #994aca;
         }
         60%{
           color: #a43644;
+          border-color: #a43644;
         }
         75%{
           color: orange;
+          border-color: orange;
         }
         90%{
           color: #3a9fd9;
+          border-color: #3a9fd9;
           opacity: 1;
         }
         100%{
           color: #fe8507;
+          border-color: #fe8507;
         }
       }
 
@@ -212,22 +221,31 @@ video{
     z-index: -2;
 }
 
+#section1 h1{
+    font-size: 1.7em;
+    text-shadow: 4px 4px 2px black;
+}
+
 #section1 p{
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: center;
 }
 
 
 #animacionCuadrado{
-    width: 500px;
+    /*width: 500px;
     height: 500px;
-    border: 2px solid grey;
+    */
+    width: 65vh;
+    height: 65vh;
+    border: 2px solid rgba(241, 209, 29, 0.658);
+    border-radius: 10px;
     position: absolute;
     z-index: -1;
     transform: rotate(45deg);
     top: 18%;
     left: 34.5%;
-
+    animation: color 8s infinite;
 }
 
 
@@ -644,6 +662,10 @@ footer #centrado a:hover{
 
     #pro h2{
         font-size: 2.5em;
+    }
+
+    #estadoScroll{
+        width: 8%;
     }
 
 }
