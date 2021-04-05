@@ -307,7 +307,12 @@ video{
     text-align: center;
     align-content: center;
     transition: all .4s ease-in-out;
+}
+
+.imagenTrabajos{
     border-radius: 5px;
+    width: 60%;
+    height: 100%;
 }
 
 .trabajo{
@@ -400,6 +405,10 @@ video{
     left: -46%;
     top: 41%;
     transform: rotate(90deg);
+}
+
+.trabajos:hover{
+    transform: translateY(-100%);
 }
 
 
