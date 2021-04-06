@@ -155,6 +155,36 @@ html{
         }
       }
 
+      @keyframes colorcito{
+        0%{
+          border-color: white;
+        }
+        7%{
+          border-color: #fe8507;
+        }
+        15%{
+          border-color: #b62323;
+        }
+        30%{
+          border-color: #11619C;
+        }
+        45%{
+          border-color: #994aca;
+        }
+        60%{
+          border-color: #a43644;
+        }
+        75%{
+          border-color: orange;
+        }
+        90%{
+          border-color: #3a9fd9;
+        }
+        100%{
+          border-color: white;
+        }
+      }
+
 /*********************************************** NAV *****************************************************/
 
 header nav{
@@ -245,7 +275,7 @@ video{
     transform: rotate(45deg);
     top: 18%;
     left: 34.5%;
-    animation: color 8s infinite;
+    animation: colorcito 8s infinite;
 }
 
 
@@ -274,11 +304,11 @@ video{
 
 .trabajo img{
     filter: grayscale(0.8);
+    transition: all .8s ease-in-out;
 }
 
 .trabajo:hover img{
     filter: grayscale(0);
-    transition: all .8s ease-in-out;
 }
 
 #historia{
@@ -322,69 +352,6 @@ video{
     justify-content: space-around;
 }
 
-/*
-#sanson{
-    background: url(../img/metalurgica.jpg);
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(0.7);
-}
-
-#sanson:hover{
-    filter:grayscale(0);
-    transition: all 1s ease-in;
-}
-
-#informatica{
-    background: url(../img/informatica.jpg);
-    background-size: cover;
-    background-position: top;
-    filter: grayscale(0.7);
-}
-
-#informatica:hover{
-    filter:grayscale(0);
-    transition: all 1s ease-in;
-}
-
-#fisio{
-    background: url(../img/fisio.jpeg);
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(0.7);
-}
-
-#fisio:hover{
-    filter:grayscale(0);
-    transition: all 1s ease-in;
-}
-
-#programador{
-    background: url(../img/programador.jpg);
-    background-size: cover;
-    background-position: top;
-    filter: grayscale(0.7);
-}
-
-#programador:hover{
-    filter:grayscale(0);
-    transition: all 1s ease-in;
-}
-
-#tecnoimagen{
-    background: url(../img/tecnoimagen.jpg);
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(0.7);
-}
-
-#tecnoimagen:hover{
-    filter:grayscale(0);
-    transition: all 1s ease-in;
-}
-*/
-
-
 .años{
     font-size: 2em;
     font-family: 'Righteous', cursive;
@@ -407,7 +374,7 @@ video{
     transform: rotate(90deg);
 }
 
-.trabajos:hover{
+.trabajo:hover .trabajos{
     transform: translateY(-100%);
 }
 
@@ -512,28 +479,32 @@ video{
 /********************************************** CONTACTAME *************************************************/
 
 #section5{
-    background-color: rgb(85, 85, 85);
+    background: url(../img/fondo2.jpg) fixed 100%;
     width: 100%;
+}
+
+#opaco{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.493);
 }
-
-#lenguajes{
-    height: 100%;
+#contacto{
+    height: 50%;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     align-content: center;
     font-family: 'Sora', sans-serif;
     font-size: 1.5em;
+
 }
 
 #contact{
-    height: 40%;
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -546,24 +517,62 @@ video{
     opacity: 0.5;
 }
 
-#lenguajes h2{
-    display: block;
+#contacto h2{
+    font-size: 9em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    position: relative;
+}
+
+#contacto h3{
+    width: 30%;
     font-size: 7em;
     color: white;
     font-family: 'Righteous', cursive;
     position: relative;
+    left: 46%;
+    top: -14%;
 }
 
-#lenguajes h3{
-    display: block;
-    font-size: 5em;
+#contacto ul{
     color: white;
     font-family: 'Righteous', cursive;
+    font-size: 1.3em;
     position: relative;
-    left: 24%;
-    top: -10%;
+    left: 30%;
+    top: 20%;
 }
 
+#contacto ul li{
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-size: 0.7em;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#certificados{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#certificados a{
+    width: 30%;
+}
+
+#certificados img{
+    width: 100%;
+    filter: brightness(0.7);
+    transition: all 1s ease-in-out;
+}
+
+#certificados img:hover{
+    filter: brightness(1);
+    cursor: pointer;
+}
 
 
 

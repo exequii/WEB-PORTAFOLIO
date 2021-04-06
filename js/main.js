@@ -141,3 +141,7 @@ $(window).bind('mousewheel', function(event) {
             }
     }
 
+    function mostrarOcultar(){
+        
+    }
+
