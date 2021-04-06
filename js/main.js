@@ -141,7 +141,17 @@ $(window).bind('mousewheel', function(event) {
             }
     }
 
-    function mostrarOcultar(){
-        
+    function mostrar(aMostrar){
+        var str="Entre";
+        console.log(str);
+        if(($('#certificado1').css("visibility") == "hidden")&&($('#certificado2').css("visibility") == "hidden")&&($('#certificado3').css("visibility") == "hidden")){
+            $(aMostrar).css("visibility", "visible");
+            $(aMostrar).css("opacity", "1");
+            }
+    }
+
+    function cerrar(aCerrar){
+        $(aCerrar).css("visibility", "hidden");
+        $(aCerrar).css("opacity", "0");
     }
 

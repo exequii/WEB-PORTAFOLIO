@@ -89,10 +89,12 @@
                 <img src="img/metalurgica.jpg" alt="" class="imagenTrabajos">
                 <div class="trabajos">
                     <h1 class="años2">2016-2017</h1>
-                    <h2>Ayudante Metalurgico</h2>
-                    <span>Fabrica de Sillas SANSON</span>
-                    <br><br><br><br>
-                    <p>Esto no deberia verse xddd</p>
+                    <div class="trabaj">
+                        <h2>Ayudante Metalurgico</h2>
+                        <span>Fabrica de Sillas SANSON</span>
+                        <br><br><br><br><br>
+                        <p>Esto no deberia verse xdddjlkjlkjlkjrlkadsjflkdsjflkdsjflksdjflksdjaflksjdlfkjdslfkdjaslfkdsjlkj</p>
+                    </div>
                 </div>
             </a>
                 <!--<div class="trabajos" data-aos="zoom-in-right" id="sanson"></div>
@@ -104,8 +106,10 @@
                 
                 <div class="trabajos">
                     <h1 class="años">2017 - 2020</h1>
-                    <h2>Jefe de Produccion Tecnica</h2>
-                    <span>Equipamiento Medico SEAKIT</span>
+                    <div class="trabaj">
+                        <h2>Jefe de Produccion Tecnica</h2>
+                        <span>Equipamiento Medico SEAKIT</span>
+                    </div>
                 </div>
                 <img src="img/fisio.jpg" alt="" class="imagenTrabajos">
             </a>
@@ -120,18 +124,22 @@
                 <img src="img/informatica.jpg" alt="" class="imagenTrabajos">
                 <div class="trabajos">
                     <h1 class="años2">2017 - 2019 </h1>
-                    <h2>Ingenieria en Informatica</h2>
-                    <span>Universidad Nacional de la Matanza</span>
-                    <p>Universitario Incompleto</p>
+                    <div class="trabaj">
+                        <h2>Ingenieria en Informatica</h2>
+                        <span>Universidad Nacional de la Matanza</span>
+                        <p>Universitario Incompleto</p>
+                    </div>
                 </div> 
             </a>
 
                 <a class="trabajo" data-aos="zoom-in-right" data-aos-delay="100">
                     <div class="trabajos">
                         <h1 class="años">2020 - 2021</h1>
-                        <h2>Servicio Tecnico</h2>
-                        <span>Equipamiento Medico TECNOIMAGEN</span>
-                        <p>En Curso</p>
+                        <div class="trabaj">
+                            <h2>Servicio Tecnico</h2>
+                            <span>Equipamiento Medico TECNOIMAGEN</span>
+                            <p>En Curso</p>
+                        </div>
                     </div>
                     <img src="img/tecnoimagen.jpg" alt=""  class="imagenTrabajos">
                 </a>
@@ -140,9 +148,11 @@
                     <img src="img/programador.jpg" alt=""  class="imagenTrabajos"> 
                     <div class="trabajos">
                         <h1 class="años2">2020 - 2021 </h1>
-                        <h2>Tecnicatura en Desarrollo Web</h2>
-                        <span>Universidad Nacional de la Matanza</span>
-                        <p>En Curso</p>
+                        <div class="trabaj">
+                            <h2>Tecnicatura en Desarrollo Web</h2>
+                            <span>Universidad Nacional de la Matanza</span>
+                            <p>En Curso</p>
+                        </div>
                     </div>
                 </a>
         </article>
@@ -200,10 +210,14 @@
             </article>
 
             <div id="certificados">
-                <a data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000" onclick=""><img src="img/certificadoHtmlCss.png" alt=""></a>
-                <a data-aos="flip-left" data-aos-delay="600" data-aos-duration="1000" onclick=""><img src="img/certificadoJava.png" alt=""></a>
-                <a data-aos="flip-left" data-aos-delay="800" data-aos-duration="1000" onclick=""><img src="img/certificadoPyhton.png" alt=""></a>
+                <a data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000" id="certificado11" onclick="mostrar('#certificado1')"><img src="img/certificadoHtmlCss.png" alt=""></a>
+                <a data-aos="flip-left" data-aos-delay="600" data-aos-duration="1000" id="certificado22" onclick="mostrar('#certificado2')"><img src="img/certificadoJava.png" alt=""></a>
+                <a data-aos="flip-left" data-aos-delay="800" data-aos-duration="1000" id="certificado33" onclick="mostrar('#certificado3')"><img src="img/certificadoPyhton.png" alt=""></a>
             </div>
+
+            <img src="img/certificadoHtmlCss.png" alt="" id="certificado1" class="popup" onclick="cerrar('#certificado1')">
+            <img src="img/certificadoJava.png" alt="" id="certificado2" class="popup" onclick="cerrar('#certificado2')">
+            <img src="img/certificadoPyhton.png" alt="" id="certificado3" class="popup" onclick="cerrar('#certificado3')">
         </div>
     </section>
 

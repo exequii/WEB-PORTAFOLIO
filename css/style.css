@@ -374,7 +374,13 @@ video{
     transform: rotate(90deg);
 }
 
-.trabajo:hover .trabajos{
+.trabaj{
+    transition: all .4s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.trabajo:hover .trabaj{
     transform: translateY(-100%);
 }
 
@@ -574,6 +580,18 @@ video{
     cursor: pointer;
 }
 
+.popup{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    z-index: 3;
+    visibility: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+
 
 
 /************************************************* FOOTER *****************************************************/
@@ -684,6 +702,14 @@ footer #centrado a:hover{
 
     #estadoScroll{
         width: 8%;
+    }
+
+    #contacto h2{
+        font-size: 7em;
+    }
+
+    #contacto h3{
+        font-size: 5em;
     }
 
 }
