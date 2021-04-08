@@ -146,12 +146,20 @@ $(window).bind('mousewheel', function(event) {
         console.log(str);
         if(($('#certificado1').css("visibility") == "hidden")&&($('#certificado2').css("visibility") == "hidden")&&($('#certificado3').css("visibility") == "hidden")){
             $(aMostrar).css("visibility", "visible");
+            $('#fondoPopup').css("visibility", "visible");
             $(aMostrar).css("opacity", "1");
+            $('#fondoPopup').css("opacity", "1");
             }
     }
 
     function cerrar(aCerrar){
-        $(aCerrar).css("visibility", "hidden");
-        $(aCerrar).css("opacity", "0");
+        $('#certificado1').css("visibility", "hidden");
+        $('#certificado1').css("opacity", "0");
+        $('#certificado2').css("visibility", "hidden");
+        $('#certificado2').css("opacity", "0");
+        $('#certificado3').css("visibility", "hidden");
+        $('#certificado3').css("opacity", "0");
+        $('#fondoPopup').css("visibility", "hidden");
+        $('#fondoPopup').css("opacity", "0");
     }
 
