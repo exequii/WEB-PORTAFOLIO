@@ -247,7 +247,7 @@ header li a:hover:before{
 
 video{
     position: fixed;
-    width: 100%;
+    max-width: 100%;
     z-index: -2;
 }
 
@@ -263,11 +263,11 @@ video{
 
 
 #animacionCuadrado{
-    /*width: 500px;
-    height: 500px;
-    */
-    width: 65vh;
+    /*width: 65vh;
     height: 65vh;
+    */
+    width: 31vw;
+    height: 31vw;
     border: 2px solid rgba(241, 209, 29, 0.658);
     border-radius: 10px;
     position: absolute;
@@ -385,11 +385,11 @@ video{
 }
 
 .mover{
-    transform: translateY(130%);
+    transform: translateY(135%);
 }
 
 #section3 .mover{
-    transform: translateY(100%);
+    transform: translateY(110%);
 }
 
 
@@ -514,11 +514,10 @@ video{
     align-content: center;
     font-family: 'Sora', sans-serif;
     font-size: 1.5em;
-
 }
 
 #contact{
-    width: 40%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -532,28 +531,52 @@ video{
 }
 
 #contacto h2{
-    font-size: 9em;
-    color: white;
-    font-family: 'Righteous', cursive;
-    position: relative;
-}
-
-#contacto h3{
-    width: 30%;
     font-size: 7em;
     color: white;
     font-family: 'Righteous', cursive;
     position: relative;
-    left: 46%;
+    left: 8%;
+    /*
+    background: url(https://images.unsplash.com/photo-1500241770736-a3f62bbc8717) repeat-y;
+    -webkit-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 80s linear infinite;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;*/
+}
+/*
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 50% 50%; }
+}
+*/
+#contacto h3{
+    width: 30%;
+    font-size: 5em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    left: 48%;
     top: -14%;
+/*
+    background: url(https://images.unsplash.com/photo-1500241770736-a3f62bbc8717) repeat-y;
+    -webkit-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 80s linear infinite;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;*/
 }
 
 #contacto ul{
     color: white;
+    width: 30%;
+    height: 100%;
     font-family: 'Righteous', cursive;
     font-size: 1.3em;
     position: relative;
-    left: 30%;
+    left: 20%;
     top: 20%;
 }
 
@@ -700,7 +723,8 @@ footer #centrado a:hover{
 
 /***************************** MEDIA QUERIES *******************************************************/
 
-@media screen and (min-width: 1200px){
+@media screen and (max-width: 1200px){
+    /*
     #contact{
         font-size: 60%;
     }
@@ -724,16 +748,48 @@ footer #centrado a:hover{
         font-size: 2.5em;
     }
 
-    #estadoScroll{
-        width: 8%;
-    }
-
     #contacto h2{
         font-size: 8em;
     }
 
     #contacto h3{
         font-size: 6em;
+    }
+*/
+    h1,h2, h3, p, span{
+        font-size: 90% !important;
+    }   
+
+    #estadoScroll{
+        width: 8%;
+    }
+    
+
+}
+
+@media screen and (max-width: 600px){
+
+    #menu{
+        display: none;
+        visibility: hidden;
+    }
+
+    #estadoScroll{
+        display: none;
+        visibility: hidden;
+    }
+
+    video{
+        display: none;
+        visibility: hidden;
+    }
+
+    h1,h2, h3, p, span{
+        font-size: 60% !important;
+    }
+
+    .trabajo{
+        flex-direction: column;
     }
 
 }
