@@ -8,6 +8,10 @@ html{
     scroll-behavior: smooth; /*esto no funciona en explorer ni safari y no se puede variar la velocidad*/
 }
 
+body{
+    background: #252525;
+}
+
 /********************************************************** NAV LATERAL ******************************************************************/
 #estadoScroll{
     position: fixed;
@@ -769,6 +773,7 @@ footer #centrado a:hover{
 
 @media screen and (max-width: 600px){
 
+
     #menu{
         display: none;
         visibility: hidden;
@@ -784,12 +789,75 @@ footer #centrado a:hover{
         visibility: hidden;
     }
 
+    /********************************** HOME *********************************/
+    #animacionCuadrado{
+        width: 60vw;
+        height: 60vw;
+        left: 20%;
+        top: 30%;
+    }
+
+
     h1,h2, h3, p, span{
         font-size: 60% !important;
     }
 
+
+    /******************************** EXPERIENCIAS *************************/
+
     .trabajo{
         flex-direction: column;
+        width: 100%;
+        align-content: center;
+        align-items: center;
+    }
+
+    .años, .años2{
+        transform: translate(0);
+        position: static;
+    }
+
+    .trabajo img{
+        width: 100%;
+    }
+
+    #historia{
+        position: static;
+    }
+
+    .experiencia{
+        justify-content: space-around;
+    }
+
+    .invertido{
+        flex-direction: column-reverse;
+    }
+
+    /***************************** PROYECTOS ********************************/
+    #pro{
+        height: 20%;
+    }
+
+    /***************************** CONTACTAME *******************************/
+    #opaco{
+        justify-content: safe;
+    }
+
+    #contacto{
+        flex-direction: column;
+        height: 30%;
+    }
+    
+    #contacto ul{
+        display: none;
+    }
+
+    #certificados{
+        flex-direction: column;
+    }
+
+    #certificados img{
+        
     }
 
 }
