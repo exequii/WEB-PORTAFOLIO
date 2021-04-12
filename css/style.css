@@ -776,6 +776,10 @@ footer #centrado a:hover{
         overflow: auto;
     }
 
+    html{
+        scroll-behavior:auto;
+    }
+
     #menu{
         display: none;
         visibility: hidden;
