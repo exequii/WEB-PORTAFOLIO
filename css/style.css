@@ -18,7 +18,7 @@ body{
     top: 40%;
     left:1%;
     z-index: 5;
-    width: 6%;
+    width: 7%;
     height: 15%;
     list-style-type: disc;
     list-style-position: inside;
@@ -811,27 +811,56 @@ footer #centrado a:hover{
 
     /******************************** EXPERIENCIAS *************************/
 
-    .trabajo{
+    #section2 .trabajo{
+        display: flex;
         flex-direction: column;
         width: 100%;
-        height: 50%;
+        height: 40%;
         align-content: center;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    #section3 .trabajo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 33%;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .trabajo img{
+        width: 100%;
+        height: 35%;
     }
 
     .trabajos{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .trabaj{
-        width: 100%;
-        height: 55%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-content: center;
+        width: 100%;
+        height: 65%;
         align-items: center;
+        align-content: center;
+    }
+
+    #section2 .trabaj {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        justify-content: space-around;
+    }
+    
+
+    #section3 .trabaj{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        justify-content: space-around;
     }
 
     .años, .años2{
@@ -839,10 +868,7 @@ footer #centrado a:hover{
         position: static;
     }
 
-    .trabajo img{
-        width: 100%;
-        height: 45%;
-    }
+    
 
     #historia{
         position: static;
@@ -850,16 +876,8 @@ footer #centrado a:hover{
     }
 
     .experiencia{
-        justify-content: start;
+        justify-content: space-around;
         height: 100%;
-    }
-
-    #section2 .experiencia .trabajo{
-        height: 40%;
-    }
-
-    #section3 .experiencia .trabajo{
-        height: 30%;
     }
 
     .trabajo:hover .trabaj{
@@ -869,16 +887,39 @@ footer #centrado a:hover{
     .mover{
         transform: translateY(0%) !important;
         width: 100%;
-        width: 100%;
     }
 
     .invertido{
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
     }
 
     /***************************** PROYECTOS ********************************/
+    #section4{
+        justify-content: safe;
+    }
+
     #pro{
-        height: 20%;
+        height: 10%;
+    }
+
+    #slider{
+        height: 50%;
+    }
+
+    .iconos{
+        flex-direction: wrap;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        height: 30%;
+        width: 90%;
+    }
+
+    .iconos img{
+        height: 30%;
+        width: 15%;
+        margin: 3%;
     }
 
     /***************************** CONTACTAME *******************************/
@@ -933,6 +974,15 @@ footer #centrado a:hover{
     #certificados a img{
         width: 70%;
         height: 80%;
+    }
+
+    /******************************** FOOTER ***************************************/
+    #redes {
+        height: 100%;
+        justify-content: center;
+    }
+    #redes img{
+        width: 60%;
     }
 
 }
