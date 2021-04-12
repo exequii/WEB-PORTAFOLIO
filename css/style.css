@@ -772,7 +772,9 @@ footer #centrado a:hover{
 }
 
 @media screen and (max-width: 600px){
-
+    *{
+        overflow: auto;
+    }
 
     #menu{
         display: none;
@@ -808,6 +810,22 @@ footer #centrado a:hover{
     .trabajo{
         flex-direction: column;
         width: 100%;
+        height: 50%;
+        align-content: center;
+        align-items: center;
+    }
+
+    .trabajos{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .trabaj{
+        width: 100%;
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         align-content: center;
         align-items: center;
     }
@@ -819,14 +837,35 @@ footer #centrado a:hover{
 
     .trabajo img{
         width: 100%;
+        height: 45%;
     }
 
     #historia{
         position: static;
+        text-align: center;
     }
 
     .experiencia{
-        justify-content: space-around;
+        justify-content: start;
+        height: 100%;
+    }
+
+    #section2 .experiencia .trabajo{
+        height: 40%;
+    }
+
+    #section3 .experiencia .trabajo{
+        height: 30%;
+    }
+
+    .trabajo:hover .trabaj{
+        transform: translateY(0%);
+    }
+
+    .mover{
+        transform: translateY(0%) !important;
+        width: 100%;
+        width: 100%;
     }
 
     .invertido{
@@ -840,12 +879,28 @@ footer #centrado a:hover{
 
     /***************************** CONTACTAME *******************************/
     #opaco{
-        justify-content: safe;
+        justify-content: space-around;
+    }
+
+    #contact{
+        width: 80%;
+    }
+
+    #contact h2{
+        position: static;
+        text-align: center;
+    }
+
+    #contact h3{
+        position: static;
+        text-align: center;
+        width: 100%;
     }
 
     #contacto{
         flex-direction: column;
-        height: 30%;
+        height: 10%;
+        justify-content: center;
     }
     
     #contacto ul{
@@ -853,11 +908,27 @@ footer #centrado a:hover{
     }
 
     #certificados{
+        height: 90%;
+        width: 100%;
         flex-direction: column;
     }
 
-    #certificados img{
+    #certificados a{
+        width: 80%;
+        height: 30%;
+    }
+
+    .certi{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
         
+    }
+
+    #certificados a img{
+        width: 70%;
+        height: 80%;
     }
 
 }

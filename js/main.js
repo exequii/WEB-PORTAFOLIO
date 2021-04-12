@@ -44,7 +44,7 @@ $(document).ready(function(){
     $('#section5').height(height);
 });
 
-
+/*
 $(function (){
   $('.multiple-items').slick({
       infinite: true,
@@ -59,15 +59,18 @@ $(function (){
       
   });
 });
-/*
+
+
 var projectNames = [ 'Home', 'Experiencia', 'Proyectos', 'Contactame']
 $('#estadoScroll li').each(function(index){
     $(this).find('a').append(projectNames[index]);
 });
 */
 
-var numero = 1;
-$(window).bind('mousewheel', function(event) {
+var mediaqueryList = window.matchMedia("(min-width: 600px)");
+if(mediaqueryList.matches) {
+    var numero = 1;
+    $(window).bind('mousewheel', function(event) {
 
     if (event.originalEvent.wheelDelta <= 0) {
         console.log(numero);
@@ -95,6 +98,40 @@ $(window).bind('mousewheel', function(event) {
     }
     numeroScroll(numero);
     });
+
+    $(function (){
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: false,
+            centerMode: true,
+            centerPadding: '0',
+            
+        });
+      });
+  }
+
+  else{
+    $(function (){
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: false,
+            centerMode: true,
+            centerPadding: '0',
+            
+        });
+      });
+  }
+
 
 
     function numeroScroll(numero){
@@ -142,8 +179,6 @@ $(window).bind('mousewheel', function(event) {
     }
 
     function mostrar(aMostrar){
-        var str="Entre";
-        console.log(str);
         if(($('#certificado1').css("visibility") == "hidden")&&($('#certificado2').css("visibility") == "hidden")&&($('#certificado3').css("visibility") == "hidden")){
             $(aMostrar).css("visibility", "visible");
             $('#fondoPopup').css("visibility", "visible");
