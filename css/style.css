@@ -689,13 +689,20 @@ footer #centrado a:hover{
     display: flex;
     flex-direction: column;
     width: 10%;
-    
+    height: 100%;
 }
 
-#redes img{
-    width: 20%;
-    margin-bottom: 5%;
-    margin-left: 15%;
+#redes a{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+#redes a img{
+    width: 30%;
+    height: 70%;
+    margin-left: 10%;
 }
 
 
@@ -818,7 +825,7 @@ footer #centrado a:hover{
         height: 40%;
         align-content: center;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     #section3 .trabajo{
@@ -906,6 +913,10 @@ footer #centrado a:hover{
         height: 50%;
     }
 
+    .for_slick_slider .slick-center{
+        transform: scale(1);
+    }
+
     .iconos{
         flex-direction: wrap;
         flex-flow: row wrap;
@@ -920,6 +931,10 @@ footer #centrado a:hover{
         height: 30%;
         width: 15%;
         margin: 3%;
+    }
+
+    #items a img{
+        width: 100%;
     }
 
     /***************************** CONTACTAME *******************************/
@@ -981,8 +996,18 @@ footer #centrado a:hover{
         height: 100%;
         justify-content: center;
     }
-    #redes img{
-        width: 60%;
+
+    #redes a{
+        width: 100%;
+        height: 25%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    #redes a img{
+        width: 70%;
+        height: 70%;
     }
 
 }
