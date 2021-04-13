@@ -63,6 +63,7 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    font-size: 2em;
 }
 
 .loader{
@@ -77,7 +78,7 @@ body{
 }
 
 #preloader{
-    font-size: 2em;
+    /*font-size: 2em;*/
     position: absolute;
     top: 65%;
     left: 37%;
@@ -322,7 +323,7 @@ video{
     width: 100%;
     position: relative;
     top: -2%;
-    left: 63%;
+    left: 53%;
 }
 
 #section3{
@@ -396,13 +397,13 @@ video{
     transform: translateY(110%);
 }
 
-
 /********************************* COLUMNA PROYECTOS ***************************************************/
 #section4{
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
+    font-size: 7em;
 }
 
 #pro{
@@ -412,7 +413,8 @@ video{
 
 #section4 h1{
     display: block;
-    font-size: 7em;
+    /*font-size: 7em;*/
+    font-size: 80%;
     color: white;
     font-family: 'Righteous', cursive;
     position: relative;
@@ -421,7 +423,8 @@ video{
 }
 #section4 h2{
     display: block;
-    font-size: 4.5em;
+    /*font-size: 4.5em;*/
+    font-size: 60%;
     color: white;
     font-family: 'Righteous', cursive;
     position: relative;
@@ -517,7 +520,6 @@ video{
     display: flex;
     align-content: center;
     font-family: 'Sora', sans-serif;
-    font-size: 1.5em;
 }
 
 #contact{
@@ -572,13 +574,13 @@ video{
 	-webkit-transform: translate3d(0,0,0);
 	-webkit-backface-visibility: hidden;*/
 }
-
+/*
 #contacto ul{
     color: white;
     width: 30%;
     height: 100%;
     font-family: 'Righteous', cursive;
-    font-size: 1.3em;
+    font-size: 3em;
     position: relative;
     left: 20%;
     top: 20%;
@@ -587,11 +589,11 @@ video{
 #contacto ul li{
     color: white;
     font-family: 'Play', sans-serif;
-    font-size: 0.7em;
+    font-size: 1em;
     list-style-type: disc;
     list-style-position: inside;
 }
-
+*/
 #certificados{
     height: 35%;
     width: 100%;
@@ -700,7 +702,7 @@ footer #centrado a:hover{
     align-items: center;
 }
 #redes a img{
-    width: 30%;
+    width: 25%;
     height: 70%;
     margin-left: 10%;
 }
@@ -766,10 +768,7 @@ footer #centrado a:hover{
     #contacto h3{
         font-size: 6em;
     }
-*/
-    h1,h2, h3, p, span{
-        font-size: 90% !important;
-    }   
+*/ 
 
     #estadoScroll{
         width: 8%;
@@ -803,6 +802,10 @@ footer #centrado a:hover{
     }
 
     /********************************** HOME *********************************/
+    #section1 h1, p{
+        font-size: 60% !important;
+    }
+
     #animacionCuadrado{
         width: 60vw;
         height: 60vw;
@@ -811,28 +814,13 @@ footer #centrado a:hover{
     }
 
 
-    h1,h2, h3, p, span{
-        font-size: 60% !important;
-    }
-
-
-    /******************************** EXPERIENCIAS *************************/
+    /******************************** EXPERIENCIAS SECTION 2*************************/
 
     #section2 .trabajo{
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 40%;
-        align-content: center;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    #section3 .trabajo{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 33%;
         align-content: center;
         align-items: center;
         justify-content: space-around;
@@ -860,7 +848,39 @@ footer #centrado a:hover{
         height: 90%;
         justify-content: space-around;
     }
+
+    #historia{
+        position: static;
+        text-align: center;
+        font-size: 2em !important;
+    }
     
+    .años, .años2{
+        font-size: 1.2em;
+    }
+
+    #section2 h2{
+        font-size: 0.9em !important;
+    }
+
+    #section2 span{
+        font-size: 0.7em !important;
+    }
+
+    #section2 p{
+        font-size: 0.6em !important;
+    }
+    
+    /************************************** SECTION 3 ******************************************/
+    #section3 .trabajo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 33%;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
 
     #section3 .trabaj{
         display: flex;
@@ -870,17 +890,27 @@ footer #centrado a:hover{
         justify-content: space-around;
     }
 
+    #section3 h2{
+        font-size: 0.9em !important;
+    }
+
+    #section3 span{
+        font-size: 0.7em !important;
+        font-family: 'Play', sans-serif !important;
+    }
+
+    #section3 p{
+        font-size: 0.6em !important;
+        font-family: 'Play', sans-serif !important;
+    }
+
+    /***************************************** COMUN SECTION 2 Y 3 *^********************************/
+
     .años, .años2{
         transform: translate(0);
         position: static;
     }
 
-    
-
-    #historia{
-        position: static;
-        text-align: center;
-    }
 
     .experiencia{
         justify-content: space-around;
@@ -902,7 +932,25 @@ footer #centrado a:hover{
 
     /***************************** PROYECTOS ********************************/
     #section4{
-        justify-content: safe;
+        justify-content: space-around;
+    }
+
+    #pro{
+        display: flex;
+        align-items:flex-end;
+        justify-content: center;
+    }
+
+    #section4 h1{
+        position: static;
+        text-align: center;
+        font-size: 40%;
+    }
+
+    #section4 h2{
+        position: static;
+        text-align: center;
+        font-size: 40%;
     }
 
     #pro{
@@ -922,7 +970,6 @@ footer #centrado a:hover{
         flex-flow: row wrap;
         align-items: flex-start;
         align-content: flex-start;
-
         height: 30%;
         width: 90%;
     }
@@ -949,12 +996,11 @@ footer #centrado a:hover{
     #contact h2{
         position: static;
         text-align: center;
+        font-size: 2.7em;
     }
 
     #contact h3{
-        position: static;
-        text-align: center;
-        width: 100%;
+       display: none;
     }
 
     #contacto{
@@ -993,7 +1039,7 @@ footer #centrado a:hover{
 
     /******************************** FOOTER ***************************************/
     #redes {
-        height: 100%;
+        height: 90%;
         justify-content: center;
     }
 
@@ -1007,7 +1053,7 @@ footer #centrado a:hover{
     }
     #redes a img{
         width: 70%;
-        height: 70%;
+        height:50%;
     }
 
 }
