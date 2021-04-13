@@ -52,35 +52,26 @@ $(document).ready(function(){
     $('#section4').height(height);
     $('#section5').height(height);
 });
-
 /*
 $(function (){
-  $('.multiple-items').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      dots: false,
-      centerMode: true,
-      centerPadding: '0',
-      
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: false,
+        centerMode: true,
+        centerPadding: '0',
+        
+    });
   });
-});
-
-
-var projectNames = [ 'Home', 'Experiencia', 'Proyectos', 'Contactame']
-$('#estadoScroll li').each(function(index){
-    $(this).find('a').append(projectNames[index]);
-});
 */
-
 
 
 var mediaqueryList = window.matchMedia("(min-width: 600px)");
 if(mediaqueryList.matches) {
-    /*var numero = 1;*/
     $(window).bind('mousewheel', function(event) {
     if (event.originalEvent.wheelDelta <= 0) {
         console.log(numero);
@@ -93,9 +84,6 @@ if(mediaqueryList.matches) {
                 scrollTop: $('#section'+ numero).offset().top
                 }, 500);
         }
-        /*$('html, body').animate({  
-            scrollTop: $('#section'+ numero).offset().top
-            }, 500);*/
     }
     else {
         console.log(numero);
@@ -108,9 +96,6 @@ if(mediaqueryList.matches) {
                 scrollTop: $('#section'+ numero).offset().top
                 }, 500);
         }
-        /*$('html, body').animate({
-            scrollTop: $('#section'+ numero).offset().top
-            }, 500);*/
     }
     numeroScroll(numero);
     });
@@ -239,4 +224,3 @@ if(mediaqueryList.matches) {
         }
         numeroScroll(numero);
     }
-

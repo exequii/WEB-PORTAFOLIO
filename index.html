@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
@@ -48,6 +49,7 @@
         </ul>
     </div>
 
+<!--<div id="fullPage">-->
 <!-- HEADER -------------------------------------------------------------------------------------------------------------------->
 
     <header>
@@ -68,7 +70,7 @@
 
 <!-- HOME ----------------------------------------------------------------------------------------------------------------------->
 
-    <section id="section1">
+    <section id="section1" >
             <video src="img/fondo.mp4" autoplay loop muted ></video>
             <div>
                 <div id="animacionCuadrado"></div>
@@ -80,7 +82,7 @@
 
 <!-- EXPERIENCIA LABORAL ------------------------------------------------------------------------------------------------------->
 
-    <section id="section2">
+    <section id="section2" >
 
     <article class="experiencia">
             <h1 id="historia" data-aos="zoom-in-right" data-aos-delay="100">MY_HISTORY</h1>
@@ -270,10 +272,11 @@
         </div>
 
     </footer>
-
+<!--</div>-->
  <!-- LINEAS DE SCRIPT ------------------------------------------------------------------------------------------------------------------->
     
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
 
@@ -283,6 +286,22 @@
         },2300);
 
         AOS.init();
+/*
+        new fullpage('#fullPage', {
+            autoScrolling: true,
+            navigation: true,
+            /*navigationPosition: 'left',
+            continuousVertical: true,
+            touchSensitivity: 5,
+            css3: false,
+            anchors:['section1','section2','section3','section4','section5','section6'],
+            navigationTooltips:['Home','Experiencia','Proyectos','Contacto'],
+            showActiveTooltip: true,
+            scrollingSpeed: 500,
+            controlArrows: false,
+            slidesNavigation: true,
+        })
+        */
     </script>
 
 </body>
