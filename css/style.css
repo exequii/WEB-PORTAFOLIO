@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /*html{
@@ -22,6 +22,7 @@ body{
     height: 15%;
     list-style-type: disc;
     list-style-position: inside;
+    cursor: pointer;
 }
 
 
@@ -212,6 +213,7 @@ header li a{
     position: relative;
     line-height: 4;
     margin: 1.5em;
+    cursor: pointer;
 }
 
 header li a:before{
@@ -252,7 +254,7 @@ header li a:hover:before{
 
 video{
     position: fixed;
-    max-width: 100%;
+    width: 100%;
     z-index: -2;
 }
 
@@ -342,6 +344,7 @@ video{
     text-align: center;
     align-content: center;
     transition: all .4s ease-in-out;
+    overflow: hidden;
 }
 
 .imagenTrabajos{
@@ -355,10 +358,11 @@ video{
     height: 27%;
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .años{
-    font-size: 2em;
+    font-size: 1.6em;
     font-family: 'Righteous', cursive;
     display: flex;
     flex-direction: column;
@@ -366,10 +370,11 @@ video{
     left: 46%;
     top: 41%;
     transform: rotate(-90deg);
+    overflow: hidden;
 }
 
 .años2{
-    font-size: 2em;
+    font-size: 1.6em;
     font-family: 'Righteous', cursive;
     display: flex;
     flex-direction: column;
@@ -377,12 +382,14 @@ video{
     left: -46%;
     top: 41%;
     transform: rotate(90deg);
+    overflow: hidden;
 }
 
 .trabaj{
     transition: all .4s ease-in-out;
     width: 100%;
     height: 300px;
+    overflow: hidden;
 }
 
 .trabajo:hover .trabaj{
@@ -409,6 +416,7 @@ video{
 #pro{
     width: 100%;
     height: 30%;
+    overflow: hidden;
 }
 
 #section4 h1{
@@ -446,6 +454,7 @@ video{
     width: 100%;
     height: 45%;
     position: absolute;
+    overflow: hidden;
 }
 
 .for_slick_slider .items{
@@ -454,6 +463,7 @@ video{
     margin: 50px;
     background-color: grey;
     transition: all linear .4s;
+    overflow: hidden;
 }
 
 
@@ -463,6 +473,7 @@ video{
 
 .for_slick_slider img{
     transition: all 1s ease-in-out;
+    overflow: hidden;
 }
 
 .for_slick_slider img:hover{
@@ -513,6 +524,7 @@ video{
     justify-content: center;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.493);
+    overflow: hidden;
 }
 #contacto{
     height: 50%;
@@ -520,6 +532,7 @@ video{
     display: flex;
     align-content: center;
     font-family: 'Sora', sans-serif;
+    overflow: hidden;
 }
 
 #contact{
@@ -530,6 +543,7 @@ video{
     top: 2%;
     left: 7%;
     text-decoration: none;
+    overflow: hidden;
 }
 
 #contact:hover{
@@ -542,6 +556,7 @@ video{
     font-family: 'Righteous', cursive;
     position: relative;
     left: 8%;
+    overflow: hidden;
     /*
     background: url(https://images.unsplash.com/photo-1500241770736-a3f62bbc8717) repeat-y;
     -webkit-background-clip: text;
@@ -565,6 +580,7 @@ video{
     position: relative;
     left: 48%;
     top: -14%;
+    overflow: hidden;
 /*
     background: url(https://images.unsplash.com/photo-1500241770736-a3f62bbc8717) repeat-y;
     -webkit-background-clip: text;
@@ -600,11 +616,13 @@ video{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 
 #certificados a{
     width: 27%;
     height: 100%;
+    overflow: hidden;
 }
 
 #certificados img{
@@ -612,6 +630,7 @@ video{
     height: 100%;
     filter: brightness(0.7);
     transition: all 1s ease-in-out;
+    overflow: hidden;
 }
 
 #certificados img:hover{
@@ -665,6 +684,7 @@ footer a{
     color: white;
     transform: scale(1);
     transition: all 1s;
+    cursor: pointer;
 }
 
 footer #centrado a:hover{
@@ -712,7 +732,7 @@ footer #centrado a:hover{
 ::-webkit-scrollbar {
     width: 8px;     /* Tamaño del scroll en vertical */
     height: 8px;    /* Tamaño del scroll en horizontal */
-    /*display: none;  /* Ocultar scroll */
+    display: none;  /* Ocultar scroll */
 }
 
 /* Ponemos un color de fondo y redondeamos las esquinas del thumb */

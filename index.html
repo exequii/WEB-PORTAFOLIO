@@ -34,15 +34,15 @@
 
     <div id="estadoScroll">
         <ul>
-            <li><a href="#section1" id="div1" class="active" onclick="numero = 1; numeroScroll(numero);">
+            <li><a id="div1" class="active" onclick="numero = 1; smooth(numero);">
                 Home</a></li>
-            <li><a href="#section2" id="div2" class="" onclick="numero = 2;  numeroScroll(numero);">
+            <li><a id="div2" class="" onclick="numero = 2;  smooth(numero);">
             Experiencia
             </a></li>
-            <li><a href="#section4" id="div4" class="" onclick="numero = 4;  numeroScroll(numero);">
+            <li><a id="div4" class="" onclick="numero = 4;  smooth(numero);">
             Proyectos
             </a></li>
-            <li><a href="#section5" id="div5" class="" onclick="numero = 5;  numeroScroll(numero);">
+            <li><a id="div5" class="" onclick="numero = 5;  smooth(numero);">
             Contacto
             </a></li>
         </ul>
@@ -57,10 +57,10 @@
 
         <nav id="menu">
             <ul>
-                <li><a href="#section1" onclick="numero = 1; numeroScroll(numero);">HOME</a></li>
-                <li><a href="#section2" onclick="numero = 2; numeroScroll(numero);">EXPERIENCIA</a></li>
-                <li><a href="#section4" onclick="numero = 4; numeroScroll(numero);">PROYECTOS</a></li>
-                <li><a href="#section5" onclick="numero = 5; numeroScroll(numero);">CONTACTO</a></li>
+                <li><a onclick="numero = 1; smooth(numero);">HOME</a></li>
+                <li><a onclick="numero = 2; smooth(numero);">EXPERIENCIA</a></li>
+                <li><a onclick="numero = 4; smooth(numero);">PROYECTOS</a></li>
+                <li><a onclick="numero = 5; smooth(numero);">CONTACTO</a></li>
             </ul>
         </nav>
         </div>
@@ -69,7 +69,7 @@
 <!-- HOME ----------------------------------------------------------------------------------------------------------------------->
 
     <section id="section1">
-            <video src="img/fondo.mp4" width="auto" height="auto" autoplay loop muted ></video>
+            <video src="img/fondo.mp4" autoplay loop muted ></video>
             <div>
                 <div id="animacionCuadrado"></div>
                 <h1 class="animate__animated animate__backInDown animate__delay-3s">SANSÓN EZEQUIEL - FULLSTACK DEVELOPMENT</h1>
@@ -218,7 +218,7 @@
                     <h2>CONTACT</h2>
                     <h3>me.</h3>
                 </a>
-
+                <!--
                 <ul data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300"
                 data-aos-easing="ease-in-sine">Aptitudes:
                     <li>Trabajo en Equipo</li>
@@ -226,6 +226,7 @@
                     <li>Creatividad</li>
                     <li>Iniciativa</li>
                 </ul>
+                -->
                 
             </article>
 
@@ -261,10 +262,10 @@
         data-aos-duration="1300">
             <div id="nav-footer">
                 <h3>Sansón, Ezequiel Damian</h3>
-                <a href="#section1" onclick="numero = 1; numeroScroll(numero);">HOME</a>
-                <a href="#section2" onclick="numero = 2; numeroScroll(numero);">EXPERIENCIA</a>
-                <a href="#section4" onclick="numero = 4; numeroScroll(numero);">PROYECTOS</a>
-                <a href="#section5" onclick="numero = 5; numeroScroll(numero);">CONTACTO</a>
+                <a onclick="numero = 1; smooth(numero);">HOME</a>
+                <a onclick="numero = 2; smooth(numero);">EXPERIENCIA</a>
+                <a onclick="numero = 4; smooth(numero);">PROYECTOS</a>
+                <a onclick="numero = 5; smooth(numero);">CONTACTO</a>
             </div>
         </div>
 

@@ -1,10 +1,17 @@
-/*
+var numero = 1;
 
-window.addEventListener('scroll', function(){
+$(window).on('beforeunload', function() {
+
+    window.setTimeout(function() {
+     $(window).scrollTop(0); 
+ }, 0);
+});
+
+window.addEventListener('keyup', function(){
     let home = document.getElementById('section1');
     let experiencia = document.getElementById('section2');
-    let proyectos = document.getElementById('section3');
-    let contacto = document.getElementById('section4');
+    let proyectos = document.getElementById('section4');
+    let contacto = document.getElementById('section5');
 
     let posicionObj1 = home.getBoundingClientRect().top;
     let posicionObj2 = experiencia.getBoundingClientRect().top;
@@ -12,21 +19,23 @@ window.addEventListener('scroll', function(){
     let posicionObj4 = contacto.getBoundingClientRect().top;
 
     let tamañoDePantalla = window.innerHeight;
-
+    
     if(posicionObj1 < tamañoDePantalla){
-        $('#div1').css("color", "red");
+        numero = 1;
     }
     if(posicionObj2 < tamañoDePantalla){
-        $('#div2').css("color", "red");
+        numero = 2;
     }
     if(posicionObj3 < tamañoDePantalla){
-        $('#div3').css("color", "red");
+        numero = 4;
     }
     if(posicionObj4 < tamañoDePantalla){
-        $('#div4').css("color", "red");
+       numero = 5;
     }
+    numeroScroll(numero);
 })
-*/
+
+
 $(document).ready(function(){
     $('.your-class').slick({
  
@@ -66,16 +75,13 @@ $('#estadoScroll li').each(function(index){
     $(this).find('a').append(projectNames[index]);
 });
 */
-function saludo(){
-    console.log('intervalo');
-}
+
 
 
 var mediaqueryList = window.matchMedia("(min-width: 600px)");
 if(mediaqueryList.matches) {
-    var numero = 1;
+    /*var numero = 1;*/
     $(window).bind('mousewheel', function(event) {
-    /*setTimeout(saludo,300);*/
     if (event.originalEvent.wheelDelta <= 0) {
         console.log(numero);
         if(numero >= 6){
@@ -83,10 +89,13 @@ if(mediaqueryList.matches) {
         }
         else{
             numero++;
+            $('html, body').animate({  
+                scrollTop: $('#section'+ numero).offset().top
+                }, 500);
         }
-        $('html, body').animate({  
+        /*$('html, body').animate({  
             scrollTop: $('#section'+ numero).offset().top
-            }, 500);
+            }, 500);*/
     }
     else {
         console.log(numero);
@@ -95,10 +104,13 @@ if(mediaqueryList.matches) {
         }
         else{
             numero--;
+            $('html, body').animate({
+                scrollTop: $('#section'+ numero).offset().top
+                }, 500);
         }
-        $('html, body').animate({
+        /*$('html, body').animate({
             scrollTop: $('#section'+ numero).offset().top
-            }, 500);
+            }, 500);*/
     }
     numeroScroll(numero);
     });
@@ -200,5 +212,31 @@ if(mediaqueryList.matches) {
         $('#certificado3').css("opacity", "0");
         $('#fondoPopup').css("visibility", "hidden");
         $('#fondoPopup').css("opacity", "0");
+    }
+
+    function smooth(numero){
+        switch(numero){
+            case 1:
+                $('html, body').animate({  
+                    scrollTop: $('#section'+ numero).offset().top
+                    }, 500);
+                break;
+            case 2:
+                $('html, body').animate({  
+                    scrollTop: $('#section'+ numero).offset().top
+                }, 500);
+                break;
+            case 4:
+                $('html, body').animate({  
+                    scrollTop: $('#section'+ numero).offset().top
+                }, 500);
+                break;
+            case 5:
+                $('html, body').animate({  
+                    scrollTop: $('#section'+ numero).offset().top
+                }, 500);
+                break;
+        }
+        numeroScroll(numero);
     }
 
