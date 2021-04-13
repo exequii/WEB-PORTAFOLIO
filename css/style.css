@@ -4,10 +4,10 @@
     overflow: hidden;
 }
 
-html{
-    scroll-behavior: smooth; /*esto no funciona en explorer ni safari y no se puede variar la velocidad*/
+/*html{
+    scroll-behavior: smooth; /*esto no funciona en explorer ni safari y no se puede variar la velocidad
 }
-
+*/
 body{
     background: #252525;
 }
@@ -94,8 +94,8 @@ body{
     width: inherit;
     height: inherit;
     position: absolute;
-    top: -15px;
-    left: -15px;
+    top: -18px;
+    left: -18px;
     animation: loader 2s linear infinite;
     opacity: 0;
 }

@@ -66,12 +66,16 @@ $('#estadoScroll li').each(function(index){
     $(this).find('a').append(projectNames[index]);
 });
 */
+function saludo(){
+    console.log('intervalo');
+}
+
 
 var mediaqueryList = window.matchMedia("(min-width: 600px)");
 if(mediaqueryList.matches) {
     var numero = 1;
     $(window).bind('mousewheel', function(event) {
-
+    /*setTimeout(saludo,300);*/
     if (event.originalEvent.wheelDelta <= 0) {
         console.log(numero);
         if(numero >= 6){
@@ -82,7 +86,7 @@ if(mediaqueryList.matches) {
         }
         $('html, body').animate({  
             scrollTop: $('#section'+ numero).offset().top
-            }, 100);
+            }, 500);
     }
     else {
         console.log(numero);
@@ -94,7 +98,7 @@ if(mediaqueryList.matches) {
         }
         $('html, body').animate({
             scrollTop: $('#section'+ numero).offset().top
-            }, 100);
+            }, 500);
     }
     numeroScroll(numero);
     });
