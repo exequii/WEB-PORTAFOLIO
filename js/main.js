@@ -1,5 +1,6 @@
 var numero = 1;
 var propagacion = false;
+var scrollPos = 0;
 
 $(window).on('beforeunload', function() {
 
@@ -100,6 +101,7 @@ $(function (){
 */
 
 /****************************** ASI COMO ESTA FUNCIONA CON EL SCROLL NORMAL ***************************/
+
 var mediaqueryList = window.matchMedia("(min-width: 600px)");
 if(mediaqueryList.matches) {
     $(window).bind('mousewheel', function(event) {
@@ -132,6 +134,7 @@ if(mediaqueryList.matches) {
         }
         ubicacion();
 });
+
 /**************************************************************************************************** */
 
 /****************************** ASI FUNCIONA PARA SCROLL AUTOMATICO *********************************** */
@@ -167,6 +170,7 @@ if(mediaqueryList.matches) {
     });
 */
 /******************************************************************************************************* */
+
     $(function (){
         $('.multiple-items').slick({
             infinite: true,
@@ -200,6 +204,8 @@ if(mediaqueryList.matches) {
       });
   }
 
+
+/************************************************************************************************* */
 
     function numeroScroll(numero){
         switch(numero){
@@ -245,6 +251,8 @@ if(mediaqueryList.matches) {
             }
     }
 
+/**************************************************************************************************** */
+
     function mostrar(aMostrar){
         if(($('#certificado1').css("visibility") == "hidden")&&($('#certificado2').css("visibility") == "hidden")&&($('#certificado3').css("visibility") == "hidden")){
             $(aMostrar).css("visibility", "visible");
@@ -253,6 +261,8 @@ if(mediaqueryList.matches) {
             $('#fondoPopup').css("opacity", "1");
             }
     }
+
+/**************************************************************************************************** */
 
     function cerrar(aCerrar){
         $('#certificado1').css("visibility", "hidden");
@@ -264,6 +274,8 @@ if(mediaqueryList.matches) {
         $('#fondoPopup').css("visibility", "hidden");
         $('#fondoPopup').css("opacity", "0");
     }
+
+/**************************************************************************************************** */
 
     function smooth(numero){
         switch(numero){
@@ -290,3 +302,93 @@ if(mediaqueryList.matches) {
         }
         numeroScroll(numero);
     }
+
+/*********************************** FUNCION SCROLLEAR  ********************************************/
+/*
+    var scrollea = function(scrollPos){
+        var mediaqueryList = window.matchMedia("(min-width: 600px)");
+            if(mediaqueryList.matches) {
+                if ((document.body.getBoundingClientRect()).top > scrollPos) {
+                    console.log(numero);
+                    if(numero >= 6){
+                        numero = 6;
+                    }
+                    else{
+                        numero++;
+                        $('html, body').animate({  
+                            scrollTop: $('#section'+ numero).offset().top
+                            }, 500);
+                    }
+                }
+                else {
+                    console.log(numero);
+                    if(numero <= 1){
+                        numero = 1;
+                    }
+                    else{
+                        numero--;
+                        $('html, body').animate({
+                            scrollTop: $('#section'+ numero).offset().top
+                            }, 500);
+                    }
+                }
+    scrollPos = (document.body.getBoundingClientRect()).top;
+    numeroScroll(numero);
+
+    $(function (){
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: false,
+            centerMode: true,
+            centerPadding: '0',
+            
+        });
+      });
+  }
+
+  else{
+    $(function (){
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: false,
+            centerMode: true,
+            centerPadding: '0',
+            
+        });
+      });
+  }
+}
+/****************************************LIMITADOR DE LLAMADAS********************************************** */
+/*
+    function limitarLLamadas(func, maxXSeg) {
+        var bloqueoActivado = false;  //Sirve para indicar que está bloqueada a la función
+        
+        return function() {
+            //Esta función interna simplemente desbloquea las llamadas
+            var anularBloqueo = function() {
+                bloqueoActivado = false;   //Anulamos el bloqueo
+            };
+    
+            if (!bloqueoActivado) {
+                //Si no hay un bloqueo, llamamos a la función inmediatamente
+                func.apply(this, arguments);
+                //Bloqueamos
+                bloqueoActivado = true;
+                //Y desbloqueamos cuando sea necesario para evitar llamadas innecesarias
+                setTimeout(anularBloqueo, 1000/maxXSeg);
+            }
+        };
+    }
+
+    window.addEventListener('scroll',limitarLLamadas(scrollea,1));
+    */

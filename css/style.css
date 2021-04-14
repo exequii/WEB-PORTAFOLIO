@@ -757,53 +757,203 @@ footer #centrado a:hover{
 /***************************** MEDIA QUERIES *******************************************************/
 
 @media screen and (max-width: 1200px){
-    /*
-    #contact{
-        font-size: 60%;
-    }
-
-    .años{
-        font-size: 1.6em;
-    }
-    .años2{
-        font-size: 1.6em;
-    }
-
-    #historia{
-        font-size: 4em;
-    }
-
-    #pro h1{
-        font-size: 5.5em;
-    }
-
-    #pro h2{
-        font-size: 2.5em;
-    }
-
-    #contacto h2{
-        font-size: 8em;
-    }
-
-    #contacto h3{
-        font-size: 6em;
-    }
-*/ 
-
     #estadoScroll{
         width: 8%;
     }
-    
+}
 
+@media screen and (max-width: 930px){
+    #estadoScroll{
+        width: 15%;
+    }
+
+    /************************************* HOME ********************************************/
+    #section1 h1{
+        font-size: 1em !important;
+    }
+
+    #section1 p{
+        font-size: 0.9em !important;
+    }
+
+    #animacionCuadrado{
+        width: 50vw;
+        height: 50vw;
+        left: 26%;
+        top: 15%;
+    }
+
+
+/************************************** EXPERIENCIA******************************************/
+    #section2 .trabajo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40%;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .trabajo img{
+        width: 60%;
+        height: 35%;
+    }
+
+    .trabajos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 65%;
+        align-items: center;
+        align-content: center;
+    }
+
+    #section2 .trabaj {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        justify-content: space-around;
+    }
+
+    #historia{
+        position: static;
+        text-align: center;
+        font-size: 2em !important;
+    }
+    
+    .años, .años2{
+        font-size: 1.2em;
+    }
+
+    #section2 h2{
+        font-size: 1em !important;
+    }
+
+    #section2 span{
+        font-size: 0.8em !important;
+    }
+
+    #section2 p{
+        font-size: 0.7em !important;
+    }
+    
+    /************************************** SECTION 3 ******************************************/
+    #section3 .trabajo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 33%;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #section3 .trabaj{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        justify-content: space-around;
+    }
+
+    #section3 h2{
+        font-size: 1em !important;
+    }
+
+    #section3 span{
+        font-size: 0.8em !important;
+        font-family: 'Play', sans-serif !important;
+    }
+
+    #section3 p{
+        font-size: 0.7em !important;
+        font-family: 'Play', sans-serif !important;
+    }
+
+    /***************************************** COMUN SECTION 2 Y 3 *^********************************/
+
+    .años, .años2{
+        transform: translate(0);
+        position: static;
+    }
+
+
+    .experiencia{
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .trabajo:hover .trabaj{
+        transform: translateY(0%);
+    }
+
+    .mover{
+        transform: translateY(0%) !important;
+        width: 100%;
+    }
+
+    .invertido{
+        flex-direction: column-reverse !important;
+    }
+
+    /*****************************************PROYECTOS **********************************************/
+    #section4 h1{
+        position: static;
+        text-align: center;
+        font-size: 60%;
+    }
+
+    #section4 h2{
+        position: static;
+        text-align: center;
+        font-size: 60%;
+    }
+
+    #pro{
+        display: flex;
+        align-items:flex-end;
+        justify-content: center;
+    }
+
+    /************************************** CONTACTAME *************************************************/
+    #contacto{
+        height: 30%;
+    }
+    #contact{
+        width: 100%;
+        position: static;
+    }
+
+    #contact h2{
+        position: static;
+        text-align: center;
+        font-size: 6em;
+    }
+
+    #contact h3{
+       display: none;
+    }
+
+    #certificados{
+        height: 50%;
+        flex-direction: wrap;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    #certificados a{
+        height: 50%;
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 600px){
     *{
         overflow: auto;
-    }
-
-    html{
-        scroll-behavior:auto;
     }
 
     #menu{
@@ -1010,7 +1160,8 @@ footer #centrado a:hover{
     }
 
     #contact{
-        width: 80%;
+        width: 100%;
+        position: static;
     }
 
     #contact h2{
