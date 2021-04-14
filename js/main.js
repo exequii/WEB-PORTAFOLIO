@@ -1,4 +1,5 @@
 var numero = 1;
+var propagacion = false;
 
 $(window).on('beforeunload', function() {
 
@@ -7,7 +8,36 @@ $(window).on('beforeunload', function() {
  }, 0);
 });
 
-window.addEventListener('keyup', function(){
+window.addEventListener('keyup',function(){
+    
+let home = document.getElementById('section1');
+let experiencia = document.getElementById('section2');
+let proyectos = document.getElementById('section4');
+let contacto = document.getElementById('section5');
+
+let posicionObj1 = home.getBoundingClientRect().top;
+let posicionObj2 = experiencia.getBoundingClientRect().top;
+let posicionObj3 = proyectos.getBoundingClientRect().top;
+let posicionObj4 = contacto.getBoundingClientRect().top;
+
+let tamañoDePantalla = window.innerHeight;
+
+if(posicionObj1 < tamañoDePantalla){
+    numero = 1;
+}
+if(posicionObj2 < tamañoDePantalla){
+    numero = 2;
+}
+if(posicionObj3 < tamañoDePantalla){
+    numero = 4;
+}
+if(posicionObj4 < tamañoDePantalla){
+   numero = 5;
+}
+numeroScroll(numero);
+});
+
+function ubicacion(){
     let home = document.getElementById('section1');
     let experiencia = document.getElementById('section2');
     let proyectos = document.getElementById('section4');
@@ -33,7 +63,7 @@ window.addEventListener('keyup', function(){
        numero = 5;
     }
     numeroScroll(numero);
-})
+}
 
 
 $(document).ready(function(){
@@ -69,7 +99,43 @@ $(function (){
   });
 */
 
+/****************************** ASI COMO ESTA FUNCIONA CON EL SCROLL NORMAL ***************************/
+var mediaqueryList = window.matchMedia("(min-width: 600px)");
+if(mediaqueryList.matches) {
+    $(window).bind('mousewheel', function(event) {
 
+        if (event.originalEvent.wheelDelta <= 0) {
+            console.log(numero);
+            /*
+            if(numero >= 6){
+                numero = 6;
+            }
+            else{
+                numero++;
+                $('html, body').animate({  
+                    scrollTop: $('#section'+ numero).offset().top
+                    }, 500);
+            }
+        }
+        else {
+            console.log(numero);
+            if(numero <= 1){
+                numero = 1;
+            }
+            else{
+                numero--;
+                $('html, body').animate({
+                    scrollTop: $('#section'+ numero).offset().top
+                    }, 500);
+            }
+            */
+        }
+        ubicacion();
+});
+/**************************************************************************************************** */
+
+/****************************** ASI FUNCIONA PARA SCROLL AUTOMATICO *********************************** */
+/*
 var mediaqueryList = window.matchMedia("(min-width: 600px)");
 if(mediaqueryList.matches) {
     $(window).bind('mousewheel', function(event) {
@@ -99,7 +165,8 @@ if(mediaqueryList.matches) {
     }
     numeroScroll(numero);
     });
-
+*/
+/******************************************************************************************************* */
     $(function (){
         $('.multiple-items').slick({
             infinite: true,
@@ -132,7 +199,6 @@ if(mediaqueryList.matches) {
         });
       });
   }
-
 
 
     function numeroScroll(numero){
