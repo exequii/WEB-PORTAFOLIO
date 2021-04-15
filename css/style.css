@@ -240,6 +240,9 @@ header li a:hover:before{
     z-index: 100;
     background-color: rgba(128, 128, 128, 0.267); 
 }
+
+
+
 /************************************************ HOME ******************************************************/
 #section1{
     width: 100%;
@@ -283,6 +286,16 @@ video{
     top: 18%;
     left: 34.5%;
     animation: colorcito 8s infinite;
+}
+
+#touch{
+    display: none;
+}
+
+#mause{
+    position: absolute;
+    right: 0;
+    width: 7%;
 }
 
 
@@ -710,7 +723,7 @@ footer #centrado a:hover{
 #redes{
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 150px;
     height: 100%;
 }
 
@@ -758,7 +771,16 @@ footer #centrado a:hover{
 
 @media screen and (max-width: 1200px){
     #estadoScroll{
-        width: 8%;
+        width: 12%;
+    }
+
+    #historia{
+        font-size: 3em !important;
+        top: 2%;
+    }
+
+    .for_slick_slider .slick-center{
+        transform: scale(1);
     }
 }
 
@@ -821,7 +843,7 @@ footer #centrado a:hover{
     #historia{
         position: static;
         text-align: center;
-        font-size: 2em !important;
+        font-size: 1.6em !important;
     }
     
     .años, .años2{
@@ -918,6 +940,10 @@ footer #centrado a:hover{
         justify-content: center;
     }
 
+    .for_slick_slider .slick-center{
+        transform: scale(1);
+    }
+
     /************************************** CONTACTAME *************************************************/
     #contacto{
         height: 30%;
@@ -956,9 +982,52 @@ footer #centrado a:hover{
         overflow: auto;
     }
 
+    #touch{
+        display: block;
+        position: absolute;
+        left: 44%;
+        top: 82%;
+        width: 15%;
+    }
+    
+    #mause{
+        display: none;
+    }
+
     #menu{
         display: none;
-        visibility: hidden;
+        position: fixed;
+        background-color: rgba(128, 128, 128, 0.267); 
+    }
+
+    #menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu ul li{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+
+    #menu ul li a{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 4;
+        font-size: 0.7em !important;
+    }
+
+
+    ul li a:hover{
+        color: black;
+    }
+
+    header li a:hover:before{
+        width: 0;
     }
 
     #estadoScroll{
@@ -971,16 +1040,36 @@ footer #centrado a:hover{
         visibility: hidden;
     }
 
+    a.desplegable{
+        display: block;
+        width: 55px;
+        height: 55px;
+        background-image: url(../img/hamburger.gif);
+        background-color: #2784a3b7;
+        position:fixed;
+        top:0;
+        right: 1;
+        cursor: pointer;
+        z-index: 101;
+    }
+    a.desplegable:hover{
+        background-color:rgba(65, 64, 64, 0.637);
+    }
+
     /********************************** HOME *********************************/
-    #section1 h1, p{
-        font-size: 60% !important;
+    #section1 h1{
+        font-size: 0.7em !important;
+    }
+
+    #section1 p{
+        font-size: 0.6em !important;
     }
 
     #animacionCuadrado{
         width: 60vw;
         height: 60vw;
         left: 20%;
-        top: 30%;
+        top: 33%;
     }
 
 
@@ -1188,6 +1277,8 @@ footer #centrado a:hover{
         height: 90%;
         width: 100%;
         flex-direction: column;
+        align-items: center;
+        align-content: center;
     }
 
     #certificados a{
@@ -1208,23 +1299,12 @@ footer #centrado a:hover{
         height: 80%;
     }
 
-    /******************************** FOOTER ***************************************/
-    #redes {
-        height: 90%;
-        justify-content: center;
+    /********************************** FOOTER *********************************************/
+    footer h3{
+        font-size: 1em !important;
     }
 
-    #redes a{
-        width: 100%;
-        height: 25%;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
+    #redes{
+        height: 80%;
     }
-    #redes a img{
-        width: 70%;
-        height:50%;
-    }
-
 }
