@@ -1054,7 +1054,7 @@ footer #centrado a:hover{
     #menu{
         display: none;
         position: fixed;
-        background-color: rgba(128, 128, 128, 0.267); 
+        background-color: rgba(128, 128, 128, 0.7); 
     }
 
     #menu ul{
@@ -1106,7 +1106,7 @@ footer #centrado a:hover{
         z-index: 101;
     }
     a.desplegable:hover{
-        background-color:rgba(65, 64, 64, 0.937);
+        background-color:rgba(65, 64, 64, 0.737);
     }
 
     /********************************** HOME *********************************/
