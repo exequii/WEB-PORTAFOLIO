@@ -71,6 +71,36 @@ $(document).ready(function(){
     $('.your-class').slick({
  
     });
+
+    $(function (){
+        $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: false,
+                centerMode: true,
+                centerPadding: '0',
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2,
+                            SlidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            SlidesToScroll: 1,
+                        }
+                    }
+                ]
+            });
+        });
 });
 
 $(document).ready(function(){
@@ -133,36 +163,6 @@ if(mediaqueryList.matches) {*/
             */
         }
         ubicacion();
-
-        $(function (){
-            $('.multiple-items').slick({
-                    infinite: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    autoplay: true,
-                    autoplaySpeed: 3000,
-                    dots: false,
-                    centerMode: true,
-                    centerPadding: '0',
-                    responsive: [
-                        {
-                            breakpoint: 1200,
-                            settings: {
-                                slidesToShow: 2,
-                                SlidesToScroll: 1,
-                            }
-                        },
-                        {
-                            breakpoint: 600,
-                            settings: {
-                                slidesToShow: 1,
-                                SlidesToScroll: 1,
-                            }
-                        }
-                    ]
-                });
-            });
         });
 
 /**************************************************************************************************** */
