@@ -1060,6 +1060,7 @@ footer #centrado a:hover{
     #menu ul{
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
 
     #menu ul li{
@@ -1068,6 +1069,7 @@ footer #centrado a:hover{
         display: flex;
         align-items: center;
         align-content: center;
+        overflow: hidden;
     }
 
     #menu ul li a{
@@ -1076,6 +1078,7 @@ footer #centrado a:hover{
         text-align: center;
         line-height: 4;
         font-size: 0.7em !important;
+        overflow: hidden;
     }
 
 
