@@ -805,6 +805,11 @@ footer #centrado a:hover{
         top: 15%;
         left: 28%;
     }
+    #fondoPopup img{
+        width: 60%;
+        height: 90%;
+
+    }
 }
 
 @media screen and (max-width: 930px){
@@ -972,6 +977,7 @@ footer #centrado a:hover{
         transform: scale(1);
     }
 
+
     /************************************** CONTACTAME *************************************************/
     #contacto{
         height: 30%;
@@ -1003,6 +1009,13 @@ footer #centrado a:hover{
         height: 50%;
         width: 300px;
     }
+
+    #fondoPopup img{
+        width: 75%;
+        height: 90%;
+    }
+
+    /****************************** FOOTER ********************************************/
 
     #responsiveImg{
         display: none;
@@ -1337,6 +1350,11 @@ footer #centrado a:hover{
     #certificados a img{
         width: 70%;
         height: 80%;
+    }
+
+    #fondoPopup img{
+        width: 100%;
+        height: 85%;
     }
 
     /********************************** FOOTER *********************************************/
