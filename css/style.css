@@ -68,6 +68,7 @@ body{
     align-items: center;
     align-content: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .loader{
@@ -79,8 +80,8 @@ body{
     top: 10%;
     left: 32%;
     /*top: calc(50vh - 75px);
-    left: calc(50vw - 75px);
-    overflow: hidden;*/
+    left: calc(50vw - 75px);*/
+    overflow: hidden;
 }
 
 #preloader{
@@ -91,6 +92,7 @@ body{
     color: white;
     animation: color 3s linear infinite;
     font-family: 'Alegreya Sans SC', sans-serif;
+    overflow: hidden;
 }
 
 .loader::before, .loader::after{
@@ -1022,7 +1024,6 @@ footer #centrado a:hover{
 
     #preloader{
         font-size: 60% !important;
-        left: 25%;
     }
 
     #touch{
@@ -1346,4 +1347,15 @@ footer #centrado a:hover{
     #redes{
         height: 80%;
     }
+}
+
+@media screen and (max-width: 400px){
+    .loader{
+        width: 40vh;
+        height: 40vh;
+        position: absolute;
+        top: 17%;
+        left: 13%;
+        }
+
 }
