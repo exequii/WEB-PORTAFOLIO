@@ -309,6 +309,9 @@ video{
     width: 7%;
 }
 
+#cv{
+    display: none;
+}
 
 /************************** COLUMNA EXPERIENCIA ***********************************************************/
 #section2{
@@ -479,6 +482,7 @@ video{
     height: 45%;
     position: absolute;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .for_slick_slider .items{
@@ -560,7 +564,7 @@ video{
 }
 
 #contact{
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -689,6 +693,41 @@ video{
     cursor: default;
 }
 
+.miCv{
+    text-decoration: none;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    position: relative;
+    left: 20%;
+    top: 15%;
+    border: solid 5px white;
+    border-radius: 15px;
+    background-color: rgba(59, 59, 59, 0.651);
+}
+
+#contacto a{
+    transition: all 1s ease-in-out;
+}
+
+.miCv img{
+    width: 50%;
+}
+
+.miCv h5{
+    color: white;
+    font-size: 1.2em;
+}
+
+
+.miCv:hover{
+    background-color: rgba(59, 59, 59);
+}
+
 
 /************************************************* FOOTER *****************************************************/
 
@@ -809,6 +848,10 @@ footer #centrado a:hover{
         width: 60%;
         height: 90%;
 
+    }
+
+    #contacto h2{
+        font-size: 5.6em !important;
     }
 }
 
@@ -983,15 +1026,31 @@ footer #centrado a:hover{
         height: 30%;
     }
     #contact{
-        width: 100%;
+        width: 60%;
         position: static;
     }
+
+ 
 
     #contact h2{
         position: static;
         text-align: center;
         font-size: 6em;
+        width: 100%;
     }
+
+    .miCv{
+        height: 130px;
+        width: 130px;
+        left: 10%;
+    }
+
+    
+    .miCv h5{
+        font-size: 0.8em !important;
+    }
+    
+    
 
     #contact h3{
        display: none;
@@ -1015,12 +1074,20 @@ footer #centrado a:hover{
         height: 90%;
     }
 
+
     /****************************** FOOTER ********************************************/
 
     #responsiveImg{
         display: none;
     }
 }
+
+@media screen and (max-width: 700px) {
+    #contact h2{
+        font-size: 4em !important;
+    }
+}
+    
 
 @media screen and (max-width: 600px){
     *{
@@ -1126,6 +1193,28 @@ footer #centrado a:hover{
         height: 60vw;
         left: 20%;
         top: 33%;
+    }
+
+    #cv{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    #cv img{
+        width: 12%;
+    }
+
+    #cv h5{
+        font-size: 0.6em !important;
+        margin-top: 10px;
+        color: white;
     }
 
 
@@ -1248,6 +1337,7 @@ footer #centrado a:hover{
     /***************************** PROYECTOS ********************************/
     #section4{
         justify-content: space-around;
+        overflow: hidden;
     }
 
     #pro{
@@ -1358,6 +1448,10 @@ footer #centrado a:hover{
     #fondoPopup img{
         width: 100%;
         height: 85%;
+    }
+
+    .miCv{
+        display: none;
     }
 
     /********************************** FOOTER *********************************************/
