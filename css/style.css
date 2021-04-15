@@ -1349,7 +1349,7 @@ footer #centrado a:hover{
     }
 }
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 400px){
     .loader{
         width: 40vh;
         height: 40vh;
