@@ -257,8 +257,12 @@ header li a:hover:before{
 
 video{
     position: fixed;
-    width: 100%;
+    top:0;
+    left: 0;
     z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
 #section1 h1{
@@ -740,6 +744,13 @@ footer #centrado a:hover{
     margin-left: 10%;
 }
 
+#responsiveImg{
+    position: absolute;
+    width: 20%;
+    right: 0;
+}
+
+
 
 /************************************** BARRA SCROLL VERTICAL **************************************/
 ::-webkit-scrollbar {
@@ -975,6 +986,10 @@ footer #centrado a:hover{
         height: 50%;
         width: 300px;
     }
+
+    #responsiveImg{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -1035,10 +1050,6 @@ footer #centrado a:hover{
         visibility: hidden;
     }
 
-    video{
-        display: none;
-        visibility: hidden;
-    }
 
     a.desplegable{
         display: block;
