@@ -272,6 +272,10 @@ video{
     object-fit: cover;
 }
 
+video::-webkit-media-controls {
+    display: none;
+  }
+
 #section1 h1{
     font-size: 1.7em;
     text-shadow: 4px 4px 2px black;
