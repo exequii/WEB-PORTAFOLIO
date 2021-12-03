@@ -1,318 +1,567 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio Web Personal, donde volcare todos mis proyectos como desarrollador web"/>
-    <meta name="keywords" content="desarrollador, web, programador"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio Web Personal, donde volcare todos mis proyectos como desarrollador web"
+    />
+    <meta name="keywords" content="desarrollador, web, programador" />
     <meta name="author" content="Sanson, Ezequiel Damian" />
-    <meta name="image" content="https://ep01.epimg.net/elpais/imagenes/2019/08/15/planeta_futuro/1565889878_668300_1565891014_noticia_normal.jpg">
-   
+    <meta
+      name="image"
+      content="https://ep01.epimg.net/elpais/imagenes/2019/08/15/planeta_futuro/1565889878_668300_1565891014_noticia_normal.jpg"
+    />
+
     <meta property="og:title" content="Sanson Ezequiel - Portafolio Web" />
     <meta property="og:url" content="exequii.github.io/WEB-PORTAFOLIO" />
-    <meta property="og:image" content="https://ep01.epimg.net/elpais/imagenes/2019/08/15/planeta_futuro/1565889878_668300_1565891014_noticia_normal.jpg" />
-    <meta property="og:description" content="Portafolio Web Personal, donde volcare todos mis proyectos como desarrollador web" />
+    <meta
+      property="og:image"
+      content="https://ep01.epimg.net/elpais/imagenes/2019/08/15/planeta_futuro/1565889878_668300_1565891014_noticia_normal.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Portafolio Web Personal, donde volcare todos mis proyectos como desarrollador web"
+    />
 
     <title>Sanson Ezequiel - Portafolio</title>
-    <link rel="shortcut icon" href="./img/icono.png">
+    <link rel="shortcut icon" href="./img/icono.png" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css"
+    />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Play&family=Ravi+Prakash&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play&family=Ravi+Prakash&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <script src="js/jquery.js"></script>
-</head>
+  </head>
 
-<!------------------------------------------- BODY ---------------------------------------------------------------------------->
-<!--------------------------------------------PRE LOADER Y NAV LATERAL -------------------------------------------------------->
-<body>
-
+  <!------------------------------------------- BODY ---------------------------------------------------------------------------->
+  <!--------------------------------------------PRE LOADER Y NAV LATERAL -------------------------------------------------------->
+  <body>
     <div class="loader_bg">
-        <div class="loader"></div>
-        <p id="preloader">EZEQUIEL SANSON - WEB DESIGN</p>
+      <div class="loader"></div>
+      <p id="preloader">EZEQUIEL SANSON - WEB DESIGN</p>
     </div>
 
     <div id="estadoScroll">
-        <ul>
-            <li><a id="div1" class="active" onclick="numero = 1; smooth(numero);">
-                Home</a></li>
-            <li><a id="div2" class="" onclick="numero = 2;  smooth(numero);">
+      <ul>
+        <li>
+          <a id="div1" class="active" onclick="numero = 1; smooth(numero);">
+            Home</a
+          >
+        </li>
+        <li>
+          <a id="div2" class="" onclick="numero = 2;  smooth(numero);">
             Experiencia
-            </a></li>
-            <li><a id="div4" class="" onclick="numero = 4;  smooth(numero);">
+          </a>
+        </li>
+        <li>
+          <a id="div4" class="" onclick="numero = 4;  smooth(numero);">
             Proyectos
-            </a></li>
-            <li><a id="div5" class="" onclick="numero = 5;  smooth(numero);">
+          </a>
+        </li>
+        <li>
+          <a id="div5" class="" onclick="numero = 5;  smooth(numero);">
             Contacto
-            </a></li>
-        </ul>
+          </a>
+        </li>
+      </ul>
     </div>
 
-<!--<div id="fullPage">-->
-<!-- HEADER -------------------------------------------------------------------------------------------------------------------->
+    <!--<div id="fullPage">-->
+    <!-- HEADER -------------------------------------------------------------------------------------------------------------------->
 
     <header>
-        <div id="transparencia">
-
-            <!--<a href="index.html"><img src=""></a>-->
+      <div id="transparencia">
+        <!--<a href="index.html"><img src=""></a>-->
 
         <nav id="menu">
-            <ul>
-                <li><a onclick="numero = 1; smooth(numero);">HOME</a></li>
-                <li><a onclick="numero = 2; smooth(numero);">EXPERIENCIA</a></li>
-                <li><a onclick="numero = 4; smooth(numero);">PROYECTOS</a></li>
-                <li><a onclick="numero = 5; smooth(numero);">CONTACTO</a></li>
-            </ul>
+          <ul>
+            <li><a onclick="numero = 1; smooth(numero);">HOME</a></li>
+            <li><a onclick="numero = 2; smooth(numero);">EXPERIENCIA</a></li>
+            <li><a onclick="numero = 4; smooth(numero);">PROYECTOS</a></li>
+            <li><a onclick="numero = 5; smooth(numero);">CONTACTO</a></li>
+          </ul>
         </nav>
-    <a class="desplegable"></a>
-    </div>
+        <a class="desplegable"></a>
+      </div>
     </header>
 
-<!-- HOME ----------------------------------------------------------------------------------------------------------------------->
+    <!-- HOME ----------------------------------------------------------------------------------------------------------------------->
 
-    <section id="section1" >
-            <video src="img/fondo.mp4" autoplay loop muted playsinline></video>
-            <div>
-                <div id="animacionCuadrado"></div>
-                <h1 class="animate__animated animate__backInDown animate__delay-3s">SANSÓN EZEQUIEL - FULLSTACK DEVELOPMENT</h1>
-                <p class="animate__animated animate__backInDown animate__delay-4s">Universidad Nacional de la Matanza</p>
-                <p class="animate__animated animate__backInDown animate__delay-5s">Tecnicatura en Desarrollo Web</p>
+    <section id="section1">
+      <video src="img/fondo.mp4" autoplay loop muted playsinline></video>
+      <div>
+        <div id="animacionCuadrado"></div>
+        <h1 class="animate__animated animate__backInDown animate__delay-3s">
+          SANSÓN EZEQUIEL - FULLSTACK DEVELOPMENT
+        </h1>
+        <p class="animate__animated animate__backInDown animate__delay-4s">
+          Universidad Nacional de la Matanza
+        </p>
+        <p class="animate__animated animate__backInDown animate__delay-5s">
+          Tecnicatura en Desarrollo Web
+        </p>
 
-                <a href="./pdf/CV EZEQUIEL SANSON 2021.pdf" id="cv" download="CV 2021 - SANSON EZEQUIEL DAMIAN"
-                data-aos="zoom-in" data-aos-delay="3000">
-                    <img src="./img/download.png" alt="">
-                    <h5>MI CURRICULUM</h5>
-                </a>
-
-            </div>
-        <img src="./img/touch.png" alt="" id="touch">
-        <img src="./img/scroll.png" alt="" id="mause">
+        <a
+          href="./pdf/CV EZEQUIEL SANSON 2021.pdf"
+          id="cv"
+          download="CV 2021 - SANSON EZEQUIEL DAMIAN"
+          data-aos="zoom-in"
+          data-aos-delay="3000"
+        >
+          <img src="./img/download.png" alt="" />
+          <h5>MI CURRICULUM</h5>
+        </a>
+      </div>
+      <img src="./img/touch.png" alt="" id="touch" />
+      <img src="./img/scroll.png" alt="" id="mause" />
     </section>
 
-<!-- EXPERIENCIA LABORAL ------------------------------------------------------------------------------------------------------->
+    <!-- EXPERIENCIA LABORAL ------------------------------------------------------------------------------------------------------->
 
-    <section id="section2" >
+    <section id="section2">
+      <article class="experiencia">
+        <h1 id="historia" data-aos="zoom-in-right" data-aos-delay="100">
+          MY_HISTORY
+        </h1>
 
-    <article class="experiencia">
-            <h1 id="historia" data-aos="zoom-in-right" data-aos-delay="100">MY_HISTORY</h1>
-
-            <a class="trabajo" data-aos="zoom-in-left" data-aos-delay="200">
-                <img src="img/metalurgica.jpg" alt="" class="imagenTrabajos">
-                <div class="trabajos">
-                    <h1 class="años2">2016-2017</h1>
-                    <div class="trabaj">
-                        <h2>Ayudante Metalurgico</h2>
-                        <span>Fabrica de Sillas SANSON</span>
-                        <p class="mover">Atencion al cliente. Manejo de Redes Sociales<br>
-                        Diseños a medida. Cotizaciones y presupuestos.<br>
-                        Montaje, armado y acoplado de estructuras de caño.<br>
-                        Manejo y ajuste de maquinaria metalurgica.
-                        </p>
-                    </div>
-                </div>
-            </a>
-                <!--<div class="trabajos" data-aos="zoom-in-right" id="sanson"></div>
+        <a class="trabajo" data-aos="zoom-in-left" data-aos-delay="200">
+          <img src="img/metalurgica.jpg" alt="" class="imagenTrabajos" />
+          <div class="trabajos">
+            <h1 class="años2">2016-2017</h1>
+            <div class="trabaj">
+              <h2>Ayudante Metalurgico</h2>
+              <span>Fabrica de Sillas SANSON</span>
+              <p class="mover">
+                Atencion al cliente. Manejo de Redes Sociales<br />
+                Diseños a medida. Cotizaciones y presupuestos.<br />
+                Montaje, armado y acoplado de estructuras de caño.<br />
+                Manejo y ajuste de maquinaria metalurgica.
+              </p>
             </div>
+          </div>
+        </a>
 
-            <div class="trabajos" data-aos="zoom-in-right" id="fisio">
-            -->
-            <a class="trabajo invertido" data-aos="zoom-in-right" data-aos-delay="300">
-                
-                <div class="trabajos">
-                    <h1 class="años">2017 - 2020</h1>
-                    <div class="trabaj">
-                        <h2>Jefe de Produccion Tecnica</h2>
-                        <span>Equipamiento Medico SEAKIT</span>
-                        <p class="mover">Planeamiento y Coordinacion de Produccion y Servicio Tecnico.<br>
-                        Control de Stock y Pedidos a Proveedores.<br>
-                        Asesoramiento y Capacitacion del Personal Tecnico.<br>
-                        Produccion, Programacion y Diseño de Nuevos Equipos.</p>
-                    </div>
-                </div>
-                <img src="img/fisio.jpg" alt="" class="imagenTrabajos">
-            </a>
-    </article>
+        <a
+          class="trabajo invertido"
+          data-aos="zoom-in-right"
+          data-aos-delay="300"
+        >
+          <div class="trabajos">
+            <h1 class="años">2017 - 2020</h1>
+            <div class="trabaj">
+              <h2>Jefe de Produccion Tecnica</h2>
+              <span>Equipamiento Medico SEAKIT</span>
+              <p class="mover">
+                Planeamiento y Coordinacion de Produccion y Servicio Tecnico.<br />
+                Control de Stock y Pedidos a Proveedores.<br />
+                Asesoramiento y Capacitacion del Personal Tecnico.<br />
+                Produccion, Programacion y Diseño de Nuevos Equipos.
+              </p>
+            </div>
+          </div>
+          <img src="img/fisio.jpg" alt="" class="imagenTrabajos" />
+        </a>
+      </article>
     </section>
+
+    <!-------------------------------------------------------------------------------------------------------------------------->
 
     <section id="section3">
+      <article class="experiencia">
+        <a class="trabajo" data-aos="zoom-in-left" data-aos-delay="200">
+          <img src="img/informatica.jpg" alt="" class="imagenTrabajos" />
+          <div class="trabajos">
+            <h1 class="años2">2017 - 2019</h1>
+            <div class="trabaj">
+              <h2>Ingenieria en Informatica</h2>
+              <span>Universidad Nacional de la Matanza</span>
+              <p>Universitario Incompleto</p>
+              <p class="mover">
+                1° y 2° Año de la Carrera Completados.<br />
+                Elementos de Programacion 1 - C++<br />
+                Cambio de carrera al ver que no tenia el enfoque que buscaba.<br />
+                Realizo Cursos y termino anotandome en Desarrollo Web.
+              </p>
+            </div>
+          </div>
+        </a>
 
-        <article class="experiencia">
+        <a
+          class="trabajo invertido"
+          data-aos="zoom-in-right"
+          data-aos-delay="100"
+        >
+          <div class="trabajos">
+            <h1 class="años">2020 - 2021</h1>
+            <div class="trabaj">
+              <h2>Servicio Tecnico</h2>
+              <span>Equipamiento Medico TECNOIMAGEN</span>
+              <p>Concluido</p>
+              <p class="mover">
+                Reparacion y Mantenimiento de Ecografos de Alta Complejidad.<br />
+                Visitas y Diagnosticos a Institutos Medicos.<br />
+                Soporte y Atencion al Cliente.<br />
+                Contacto con Proveedores Esaote - Sonosite.
+              </p>
+            </div>
+          </div>
+          <img src="img/tecnoimagen.jpg" alt="" class="imagenTrabajos" />
+        </a>
 
-            <a class="trabajo" data-aos="zoom-in-left" data-aos-delay="200">
-                <img src="img/informatica.jpg" alt="" class="imagenTrabajos">
-                <div class="trabajos">
-                    <h1 class="años2">2017 - 2019 </h1>
-                    <div class="trabaj">
-                        <h2>Ingenieria en Informatica</h2>
-                        <span>Universidad Nacional de la Matanza</span>
-                        <p>Universitario Incompleto</p>
-                        <p class="mover">1° y 2° Año de la Carrera Completados.<br>
-                        Elementos de Programacion 1 - C++<br>
-                        Cambio de carrera al ver que no tenia el enfoque que buscaba.<br>
-                        Realizo Cursos y termino anotandome en Desarrollo Web.
-                        </p>
-                    </div>
-                </div> 
-            </a>
-
-                <a class="trabajo invertido" data-aos="zoom-in-right" data-aos-delay="100">
-                    <div class="trabajos">
-                        <h1 class="años">2020 - 2021</h1>
-                        <div class="trabaj">
-                            <h2>Servicio Tecnico</h2>
-                            <span>Equipamiento Medico TECNOIMAGEN</span>
-                            <p>En Curso</p>
-                            <p class="mover">Reparacion y Mantenimiento de Ecografos de Alta Complejidad.<br>
-                            Visitas y Diagnosticos a Institutos Medicos.<br>
-                            Soporte y Atencion al Cliente.<br>
-                            Contacto con Proveedores Esaote - Sonosite.</p>
-                        </div>
-                    </div>
-                    <img src="img/tecnoimagen.jpg" alt=""  class="imagenTrabajos">
-                </a>
-
-                <a class="trabajo" data-aos="zoom-in-left" data-aos-delay="300">
-                    <img src="img/programador.jpg" alt=""  class="imagenTrabajos"> 
-                    <div class="trabajos">
-                        <h1 class="años2">2020 - 2021 </h1>
-                        <div class="trabaj">
-                            <h2>Tecnicatura en Desarrollo Web</h2>
-                            <span>Universidad Nacional de la Matanza</span>
-                            <p>En Curso</p>
-                            <p class="mover">1° Año de la Carrera Completo - Todas las Materias Promocionadas<br>
-                            Programacion Basica 1 y 2 - Java<br>
-                            Programacion Web 1 - Html, Css, Js, Jquery, Bootstrap<br>
-                            Base de Datos 1 - SQL</p>
-                        </div>
-                    </div>
-                </a>
-        </article>
+        <a class="trabajo" data-aos="zoom-in-left" data-aos-delay="300">
+          <img src="img/programador.jpg" alt="" class="imagenTrabajos" />
+          <div class="trabajos">
+            <h1 class="años2">2020 - 2021</h1>
+            <div class="trabaj">
+              <h2>Tecnicatura en Desarrollo Web</h2>
+              <span>Universidad Nacional de la Matanza</span>
+              <p>En Curso</p>
+              <p class="mover">
+                2° Año de la Carrera Completo - Todas las Materias
+                Promocionadas<br />
+                Taller WEB 1 - Java - Hibernate - Spring<br />
+                Programacion Web 1 y 2 - Javascript y PHP<br />
+                Base de Datos 1 - SQL
+              </p>
+            </div>
+          </div>
+        </a>
+      </article>
     </section>
 
-<!-- PROYECTOS ---------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------------->
+
+    <section id="section-extra">
+      <article class="experiencia exp-final">
+        <a
+          class="trabajo invertido"
+          data-aos="zoom-in-right"
+          data-aos-delay="100"
+        >
+          <div class="trabajos">
+            <h1 class="años">2021 - 2021</h1>
+            <div class="trabaj">
+              <h2>Desarrollador Front-End</h2>
+              <span>Front-End en empresa VIRTUALDREAMS</span>
+              <p>Concluido</p>
+              <p class="mover">
+                <br />
+                Desarrollo de Paginas Web.<br />
+                Js - Jquery - .NET - React.js<br />
+                Metodologias SCRUM.
+              </p>
+            </div>
+          </div>
+          <img
+            src="img/virtualdreams.jpeg"
+            alt=""
+            class="imagenTrabajos adapta-imagen"
+          />
+        </a>
+
+        <a class="trabajo" data-aos="zoom-in-left" data-aos-delay="300">
+          <img src="img/ncr.jpeg" alt="" class="imagenTrabajos" />
+          <div class="trabajos">
+            <h1 class="años2">2021 - Today</h1>
+            <div class="trabaj">
+              <h2>Desarrollador Software</h2>
+              <span>Programador Javascript para NCR</span>
+              <p>En Curso</p>
+              <p class="mover">
+                Desarrollo de Framework Propio<br />
+                Servicios a PRISMA SOLUTIONS<br />
+                Desarrollo de Software en React.js con Electron.js<br />
+                Migracion de Software a React.js
+              </p>
+            </div>
+          </div>
+        </a>
+      </article>
+    </section>
+
+    <!-- PROYECTOS ---------------------------------------------------------------------------------------------------------------------------->
 
     <section id="section4">
-        <div id="pro" data-aos="flip-down" data-aos-delay="200" data-aos-duration="1000">
-            <h1>PRO</h1>   
-            <h2>-YECTs.</h2>
+      <div
+        id="pro"
+        data-aos="flip-down"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
+        <h1>PRO</h1>
+        <h2>-YECTs.</h2>
+      </div>
+
+      <div
+        id="slider"
+        class="for_slick_slider multiple-items"
+        data-aos="flip-down"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
+        <div class="items">
+          <a href="https://exequii.github.io/WEB-COVID19/" target="_blank"
+            ><img src="img/covid.jpg" alt=""
+          /></a>
         </div>
-
-
-        <div id="slider" class="for_slick_slider multiple-items" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
-            <div class="items"><a href="https://exequii.github.io/WEB-COVID19/" target="_blank"><img src="img/covid.jpg" alt=""></a></div>
-            <div class="items"><a href="http://web-peliculas-react.surge.sh/" target="_blank"><img src="img/peliculas.JPG" alt=""></a></div>
-            <div class="items"><a href="http://tecnoimagen-distribuidores.surge.sh/" target="_blank"><img src="img/webtecno.JPG" alt=""></a></div>
-            <div class="items"><a><img src="img/dsdesign.jpg" alt=""></a></div>
-          </div>
-
-        <div class="iconos">
-            <img src="img/bootstrap.png" alt="" data-aos="fade-up" data-aos-delay="400">
-            <img src="img/sass.png" alt="" data-aos="fade-up" data-aos-delay="500">
-            <img src="img/html.png" alt="" data-aos="fade-up" data-aos-delay="600">
-            <img src="img/css.png" alt="" data-aos="fade-up" data-aos-delay="700">
-            <img src="img/js.png" alt="" data-aos="fade-up" data-aos-delay="800">
-            <img src="img/java.png" alt="" data-aos="fade-up" data-aos-delay="900">
-            <img src="img/bdd.png" alt="" data-aos="fade-up" data-aos-delay="1000">
-            <img src="img/jquery.png" alt="" data-aos="fade-up" data-aos-delay="1100">
+        <div class="items">
+          <a href="http://web-peliculas-react.surge.sh/" target="_blank"
+            ><img src="img/peliculas.JPG" alt=""
+          /></a>
         </div>
+        <div class="items">
+          <a href="http://tecnoimagen-distribuidores.surge.sh/" target="_blank"
+            ><img src="img/webtecno.JPG" alt=""
+          /></a>
+        </div>
+        <div class="items">
+          <a
+            href="https://exequii.github.io/profhilo-sin-video/"
+            target="_blank"
+            ><img src="img/profhilo.jpg" alt=""
+          /></a>
+        </div>
+        <div class="items">
+          <a
+            href="https://github.com/exequii/Proyecto_final_pw2"
+            target="_blank"
+            ><img src="img/gaucho-rocket.JPG" alt=""
+          /></a>
+        </div>
+        <div class="items">
+          <a><img src="img/dsdesign.jpg" alt="" /></a>
+        </div>
+        <div class="items">
+          <a href="https://github.com/exequii/pokedexPhp" target="_blank"
+            ><img src="img/pokedex.jpg" alt=""
+          /></a>
+        </div>
+      </div>
 
+      <div class="iconos">
+        <img
+          src="img/bootstrap.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-delay="400"
+        />
+        <img
+          src="img/sass.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-delay="500"
+        />
+        <img
+          src="img/html.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-delay="600"
+        />
+        <img src="img/css.png" alt="" data-aos="fade-up" data-aos-delay="700" />
+        <img src="img/js.png" alt="" data-aos="fade-up" data-aos-delay="800" />
+        <img
+          src="img/java.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-delay="900"
+        />
+        <img
+          src="img/bdd.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        />
+        <img
+          src="img/jquery.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-delay="1100"
+        />
+      </div>
     </section>
 
-<!-- CONTACTAME -------------------------------------------------------------------------------------------------------------------------->
+    <!-- CONTACTAME -------------------------------------------------------------------------------------------------------------------------->
 
     <section id="section5">
-        <div id="opaco">
-            <article id="contacto">
-                <a href="mailto:ezequiel.sanson@hotmail.com" id="contact" 
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="1000">
-                    <h2>CONTACT</h2>
-                    <h3>me.</h3>
-                </a>
-                
-                <a href="./pdf/CV EZEQUIEL SANSON 2021.pdf" class="miCv" data-aos="zoom-in" download="CV 2021 - SANSON EZEQUIEL DAMIAN">
-                    <img src="./img/download.png" alt="">
-                    <h5>MI CURRICULUM</h5>
-                </a>
-                
-            </article>
+      <div id="opaco">
+        <article id="contacto">
+          <a
+            href="mailto:ezequiel.sanson@hotmail.com"
+            id="contact"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+          >
+            <h2>CONTACT</h2>
+            <h3>me.</h3>
+          </a>
 
-            <div id="certificados">
-                <a class="certi" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000" id="certificado11" onclick="mostrar('#certificado1')"><img src="img/certificadoHtmlCss.png" alt=""></a>
-                <a class="certi" data-aos="flip-left" data-aos-delay="600" data-aos-duration="1000" id="certificado22" onclick="mostrar('#certificado2')"><img src="img/certificadoJava.png" alt=""></a>
-                <a class="certi" data-aos="flip-left" data-aos-delay="800" data-aos-duration="1000" id="certificado33" onclick="mostrar('#certificado3')"><img src="img/certificadoPyhton.png" alt=""></a>
-            </div>
-            <div class="popup" id="fondoPopup" onclick="cerrar()">
-                <img src="img/certificadoHtmlCss.png" alt="" id="certificado1" class="popup" >
-                <img src="img/certificadoJava.png" alt="" id="certificado2" class="popup">
-                <img src="img/certificadoPyhton.png" alt="" id="certificado3" class="popup">
-            </div>
+          <a
+            href="./pdf/CV EZEQUIEL SANSON 2021.pdf"
+            class="miCv"
+            data-aos="zoom-in"
+            download="CV 2021 - SANSON EZEQUIEL DAMIAN"
+          >
+            <img src="./img/download.png" alt="" />
+            <h5>MI CURRICULUM</h5>
+          </a>
+        </article>
+
+        <div id="certificados">
+          <a
+            class="certi"
+            data-aos="flip-left"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            id="certificado11"
+            onclick="mostrar('#certificado1')"
+            ><img src="img/certificadoHtmlCss.png" alt=""
+          /></a>
+          <a
+            class="certi"
+            data-aos="flip-left"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+            id="certificado22"
+            onclick="mostrar('#certificado2')"
+            ><img src="img/certificadoJava.png" alt=""
+          /></a>
+          <a
+            class="certi"
+            data-aos="flip-left"
+            data-aos-delay="800"
+            data-aos-duration="1000"
+            id="certificado33"
+            onclick="mostrar('#certificado3')"
+            ><img src="img/certificadoPyhton.png" alt=""
+          /></a>
         </div>
+        <div class="popup" id="fondoPopup" onclick="cerrar()">
+          <img
+            src="img/certificadoHtmlCss.png"
+            alt=""
+            id="certificado1"
+            class="popup"
+          />
+          <img
+            src="img/certificadoJava.png"
+            alt=""
+            id="certificado2"
+            class="popup"
+          />
+          <img
+            src="img/certificadoPyhton.png"
+            alt=""
+            id="certificado3"
+            class="popup"
+          />
+        </div>
+      </div>
     </section>
 
-    
-
-<!-- FOOTER ------------------------------------------------------------------------------------------------------------------------------->
+    <!-- FOOTER ------------------------------------------------------------------------------------------------------------------------------->
 
     <footer id="section6">
-        <div id="redes" data-aos="fade-right"
+      <div
+        id="redes"
+        data-aos="fade-right"
         data-aos-easing="linear"
-        data-aos-duration="1300">
-            <a href="https://github.com/exequii" target="_blank"><img src="img/github.png" alt=""></a>
-            <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" alt=""></a>
-            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="img/ig.png" alt=""></a>
-            <a href="https://ar.linkedin.com/in/ezequiel-sans%C3%B3n-8128b11b0" target="_blank"><img src="img/linkedin.png" alt=""></a>
+        data-aos-duration="1300"
+      >
+        <a href="https://github.com/exequii" target="_blank"
+          ><img src="img/github.png" alt=""
+        /></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"
+          ><img src="img/twitter.png" alt=""
+        /></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"
+          ><img src="img/ig.png" alt=""
+        /></a>
+        <a
+          href="https://ar.linkedin.com/in/ezequiel-sans%C3%B3n-8128b11b0"
+          target="_blank"
+          ><img src="img/linkedin.png" alt=""
+        /></a>
+      </div>
+
+      <div
+        id="centrado"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1300"
+      >
+        <div id="nav-footer">
+          <h3>Sansón, Ezequiel Damian</h3>
+          <a onclick="numero = 1; smooth(numero);">HOME</a>
+          <a onclick="numero = 2; smooth(numero);">EXPERIENCIA</a>
+          <a onclick="numero = 4; smooth(numero);">PROYECTOS</a>
+          <a onclick="numero = 5; smooth(numero);">CONTACTO</a>
         </div>
+      </div>
 
-        <div id="centrado" data-aos="fade-down"
+      <img
+        src="./img/responsive.jpg"
+        alt=""
+        id="responsiveImg"
+        data-aos="fade-left"
         data-aos-easing="linear"
-        data-aos-duration="1300">
-            <div id="nav-footer">
-                <h3>Sansón, Ezequiel Damian</h3>
-                <a onclick="numero = 1; smooth(numero);">HOME</a>
-                <a onclick="numero = 2; smooth(numero);">EXPERIENCIA</a>
-                <a onclick="numero = 4; smooth(numero);">PROYECTOS</a>
-                <a onclick="numero = 5; smooth(numero);">CONTACTO</a>
-            </div>
-        </div>
-
-        <img src="./img/responsive.jpg" alt="" id="responsiveImg" data-aos="fade-left"
-        data-aos-easing="linear"
-        data-aos-duration="1300">
-
+        data-aos-duration="1300"
+      />
     </footer>
-<!--</div>-->
- <!-- LINEAS DE SCRIPT ------------------------------------------------------------------------------------------------------------------->
-    
+    <!--</div>-->
+    <!-- LINEAS DE SCRIPT ------------------------------------------------------------------------------------------------------------------->
+
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
 
     <script>
-        setTimeout(function(){
-            $('.loader_bg').fadeToggle();
-        },2300);
+      setTimeout(function () {
+        $(".loader_bg").fadeToggle();
+      }, 2300);
 
-        AOS.init();
+      AOS.init();
 
-    $(".slider").not('.slick-initialized').slick();
-/*
+      $(".slider").not(".slick-initialized").slick();
+      /*
         new fullpage('#fullPage', {
             autoScrolling: true,
             navigation: true,
@@ -329,6 +578,5 @@
         })
         */
     </script>
-
-</body>
+  </body>
 </html>
